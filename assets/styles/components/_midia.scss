@@ -1,0 +1,25 @@
+@import '../abstract/variaveis';
+
+.midia {
+    padding: $padding;
+    h2 {
+        font-size: $titulo;
+        text-align: center;
+        color: $verde-escuro;
+    }
+
+    .midia-icones {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem;
+        img {
+            width: 80px;
+            height: 50px;
+            filter: saturate(0%);
+        }
+    }
+}

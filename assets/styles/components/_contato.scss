@@ -1,0 +1,44 @@
+@import '../abstract/variaveis';
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: $padding;
+    height: 100vh;
+
+    background: url(../img/backgrounds/2.jpg);
+    background-repeat: no-repeat;
+    background-position: right -600px center;
+    background-size: cover;
+
+    color: white;
+
+    h2 {
+        font-size: $titulo;
+        
+    }
+    p {
+        font-size: $texto;
+    }
+    .destaque {
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .botao {
+        background-color: $verde-escuro;
+        border-radius: 100px;
+        padding: 1rem;
+        transition: 500ms;
+        &:hover {
+            background-color: $verde-claro;
+        }
+    }
+}

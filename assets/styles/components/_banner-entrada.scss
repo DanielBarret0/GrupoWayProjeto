@@ -1,0 +1,73 @@
+@import '../abstract/variaveis';
+
+.banner-entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: $padding;
+    height: 100vh;
+
+    background: url(../img/backgrounds/1.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+
+    color: white;
+
+    h2 {
+        font-size: $titulo;
+        
+    }
+    p {
+        font-size: $texto;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .highlight {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .highlight::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        /* Inicialmente sem largura */
+        height: 100%;
+        background-color: $verde;
+        /* Cor de fundo da marcação */
+        mix-blend-mode: multiply;
+        /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+        z-index: -1;
+        /* Coloca o pseudo-elemento abaixo do texto */
+        transition: width 2s ease-out;
+        /* Adiciona uma transição para suavizar a animação */
+        border-radius: 5px;
+    }
+    
+    .highlight.active::before {
+        width: 100%;
+    
+        /* Largura total quando a classe "active" é aplicada */
+    }
+
+    .botao {
+        background-color: $verde-escuro;
+        border-radius: 100px;
+        padding: 1rem;
+        transition: 500ms;
+        &:hover {
+            background-color: $verde-claro;
+        }
+    }
+
+}

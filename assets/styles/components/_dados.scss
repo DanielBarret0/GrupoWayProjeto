@@ -1,0 +1,26 @@
+@import '../abstract/variaveis';
+
+.dados {
+    .counter-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .counter-wrapper {
+        text-align: center;
+        width: 150px;
+        p {
+            font-size: 0.8rem;
+            color: rgba(103, 103, 103, 0.666);
+        }
+    }
+
+    .counter {
+        font-size: 2em;
+        font-family: 'Arial', sans-serif;
+        color: $verde;
+    }
+}
