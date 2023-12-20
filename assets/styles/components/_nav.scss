@@ -5,7 +5,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left, $verde, $verde-claro);
+    //background: linear-gradient(to left, $verde, $verde-claro);
+
+    /* From https://css.glass */
+    background: rgba(81, 186, 90, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+
     color: #FFF;
     height: 50px;
     padding: 0.5rem;
@@ -24,10 +31,8 @@
 
 .menu {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
-    flex-direction: row;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -138,10 +143,21 @@
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        background: linear-gradient(to left, $verde, $verde-claro);
+        //background: linear-gradient(to left, $verde, $verde-claro);
+
+        background: rgba(81, 186, 90, 0);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
 
         &:hover {
-            background: $verde-claro;
+            //background: $verde-claro;
+
+            /* From https://css.glass */
+            background: rgba(81, 186, 90, 0.21);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
     }
 
@@ -151,8 +167,39 @@
 
 }
 
+@media (min-width: 768px) {
+    .top-nav {
+        padding: 0 2rem;
+    }
+    .menu {
+        gap: 1rem;
+    }
+}
+
 @media (min-width: 1440px) {
     .top-nav {
-        padding: 0.5rem 10rem;
+        padding: 1.5rem 10rem;
+    }
+
+    .menu {
+        li {
+            .menu-link {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 2000px) {
+    .top-nav {
+        padding: 2rem 35rem;
+    }
+
+    .menu {
+        li {
+            .menu-link {
+                font-size: 1rem;
+            }
+        }
     }
 }

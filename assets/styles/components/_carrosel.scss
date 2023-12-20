@@ -1,10 +1,18 @@
 @import '../abstract/variaveis';
 
 .carrosel {
-    background-color: $verde;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $laranja;
     margin-top: 2rem;
-
-    border-radius: 0 0 70% 70%/10px 10px 0 0; /* Curva na parte superior mais acentuada */
+    padding-top: 3rem;
+    h2 {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 .carousel-container {
@@ -35,5 +43,8 @@ img {
 @media (min-width: 768px) {
     .carrosel {
         padding: 3rem 0;
+        h2 {
+            font-size: 2rem;
+        }
     }
 }

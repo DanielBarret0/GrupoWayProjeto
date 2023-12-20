@@ -38,12 +38,12 @@
     }
 
     .botao {
-        background-color: $verde;
+        background-color: $laranja;
         border-radius: 100px;
         padding: 1rem;
         transition: 500ms;
         &:hover {
-            background-color: $verde-claro;
+            background-color: $laranja-claro;
         }
     }
 }
@@ -69,5 +69,13 @@
 @media (min-width: 1440px) {
     .contato {
         background-position: center;
+        padding: 0 10rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .contato {
+        background-position: center;
+        padding: 0 35rem;
     }
 }

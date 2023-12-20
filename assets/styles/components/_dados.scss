@@ -20,6 +20,7 @@
 
     .counter {
         font-size: 2em;
+        font-weight: 600;
         font-family: 'Arial', sans-serif;
         color: $verde;
     }
@@ -45,6 +46,28 @@
     .dados {
         .counter-wrapper {
             width: 230px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .dados {
+        .counter-wrapper {
+            .counter {
+                font-size: 3rem;
+            }
+            width: 340px;
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 2000px) {
+    .dados {
+        .counter-wrapper {
+            width: 600px;
         }
     }
 }

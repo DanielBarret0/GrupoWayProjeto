@@ -59,12 +59,12 @@
         }
     
         .botao {
-            background-color: $verde;
+            background-color: $laranja;
             border-radius: 100px;
             padding: 1rem;
             transition: 500ms;
             &:hover {
-                background-color: $verde-claro;
+                background-color: $laranja-claro;
             }
         }
     }
@@ -92,3 +92,48 @@
         }
     }
 }
+
+@media (min-width: 1440px) {
+    .banner-entrada {
+        .textos {
+            padding: 0 10rem;
+            h2 {
+                font-size: $titulo-desktop;
+                .highlight {
+                    font-size: $titulo-desktop;
+                }
+            }
+
+            p {
+                font-size: $texto-desktop;
+            }
+
+            a {
+                font-size: $texto-desktop;
+            }
+        }
+    }
+}
+
+@media (min-width: 2000px) {
+    .banner-entrada {
+        .textos {
+            padding: 0 35rem;
+            h2 {
+                font-size: $titulo-desktop;
+                .highlight {
+                    font-size: $titulo-desktop;
+                }
+            }
+
+            p {
+                font-size: $texto-desktop;
+            }
+
+            a {
+                font-size: $texto-desktop;
+            }
+        }
+    }
+}
+

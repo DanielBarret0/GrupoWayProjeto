@@ -88,3 +88,22 @@
         align-items: center;
     }
 }
+
+@media (min-width: 1440px) {
+    .rodape {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        .redes {
+            margin: 0;
+            .icones-redes {
+                a{
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
