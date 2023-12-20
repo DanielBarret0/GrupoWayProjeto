@@ -1,0 +1,100 @@
+@import '../abstract/variaveis';
+
+/* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
+
+.text-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-text {
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.border-effect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.text-container:hover .hover-text {
+    color: white;
+}
+
+.text-container:hover .border-effect {
+    width: 100%;
+}
+
+/* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
+
+/* EFEITO SUBLINHADO ANIMADO */
+.highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sem largura */
+    height: 100%;
+    background-color: $verde;
+    /* Cor de fundo da marcação */
+    mix-blend-mode: multiply;
+    /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+    z-index: -1;
+    /* Coloca o pseudo-elemento abaixo do texto */
+    transition: width 2s ease-out;
+    /* Adiciona uma transição para suavizar a animação */
+    border-radius: 5px;
+}
+
+.highlight.active::before {
+    width: 100%;
+}
+
+/* EFEITO SUBLINHADO ANIMADO */
+
+
+/* EFEITO RODAPE REDES */
+
+
+.scroll-section.active {
+    transform: scale(1.1);
+}
+
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+        /* Crescimento mais suave */
+    }
+}
+
+.scroll-section.active {
+    animation: highlight 0.5s ease, highlight-back 0.5s ease 0.5s;
+    /* Adição de uma segunda animação para retornar ao tamanho original */
+}
+
+@keyframes highlight-back {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

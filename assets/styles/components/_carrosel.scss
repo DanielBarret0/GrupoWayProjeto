@@ -3,6 +3,8 @@
 .carrosel {
     background-color: $verde;
     margin-top: 2rem;
+
+    border-radius: 0 0 70% 70%/10px 10px 0 0; /* Curva na parte superior mais acentuada */
 }
 
 .carousel-container {
@@ -28,4 +30,10 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .carrosel {
+        padding: 3rem 0;
+    }
 }

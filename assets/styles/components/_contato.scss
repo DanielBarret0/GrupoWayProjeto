@@ -30,15 +30,44 @@
     a {
         text-decoration: none;
         color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .botao {
-        background-color: $verde-escuro;
+        background-color: $verde;
         border-radius: 100px;
         padding: 1rem;
         transition: 500ms;
         &:hover {
             background-color: $verde-claro;
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .contato {
+        padding: 0 6rem;
+
+        h2 {
+            font-size: $titulo-tablet;
+        }
+
+        p {
+            font-size: $texto-tablet;
+        }
+
+        a {
+            font-size: $texto-tablet;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .contato {
+        background-position: center;
     }
 }

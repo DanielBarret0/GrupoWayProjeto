@@ -1,0 +1,90 @@
+@import '../abstract/variaveis';
+
+.rodape {
+    background-color: $verde;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: $padding;
+    gap: 2rem;
+
+    .container {
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            li {
+                list-style: none;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-2 {
+        text-align: right;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        .titulo {
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .icones-redes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+
+            a{
+                i {
+                    font-size: 1.5rem;
+                    padding: 0.2rem 0.5rem;
+                    transition: 200ms;
+                    &:hover {
+                        background-color: white;
+                        color: $verde;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .rodape {
+        padding: 2rem;
+        .container-2 {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

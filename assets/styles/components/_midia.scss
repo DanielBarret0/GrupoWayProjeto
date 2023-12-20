@@ -23,3 +23,19 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .midia {
+        h2 {
+            font-size: $titulo-tablet;
+        }
+    
+        .midia-icones {
+            img {
+                width: 90px;
+                height: 50px;
+            }
+        } 
+    }
+    
+}

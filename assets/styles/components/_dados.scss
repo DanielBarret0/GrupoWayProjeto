@@ -24,3 +24,27 @@
         color: $verde;
     }
 }
+
+@media (min-width: 768px) {
+    .dados {
+        .counter-container {
+            gap: 2rem;
+        }
+        .counter-wrapper {
+            text-align: center;
+            width: 200px;
+            p {
+                font-size: $texto;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .dados {
+        .counter-wrapper {
+            width: 230px;
+        }
+    }
+}
