@@ -8,42 +8,83 @@
         padding-top: 2rem;
     }
 
-    
+
     .area-card {
         .card {
             margin: 2rem;
             background-color: $verde;
             border-radius: 10px;
+
             img {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
             }
-    
+
             .textos {
                 padding: 1rem;
                 color: white;
-    
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
                 h3 {
                     font-size: 1.2rem;
                     font-weight: 600;
                     padding-bottom: 1rem;
                 }
-    
+
                 p {
                     font-weight: 500;
                 }
+            }
+
+            .redes-socias {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-self: baseline;
+
+                h3 {
+                    padding-top: 1rem;
+                    color: white;
+                }
+
+                .redes {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    text-align: center;
+                    a {
+                        i {
+                            color: white;
+                            font-size: 1.5rem;
+                            padding: 0.2rem 0.5rem;
+                            transition: 200ms;
+                            &:hover {
+                                background-color: white;
+                                color: $verde;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+
             }
         }
 
         .card1 {
             background-color: $verde;
         }
+
         .card2 {
             background-color: $cor-vibrante-1;
         }
+
         .card3 {
             background-color: $verde;
         }
+
         .card4 {
             background-color: $cor-vibrante-1;
         }
@@ -65,6 +106,7 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
+
             .card {
                 display: flex;
                 width: 80%;
@@ -102,6 +144,7 @@
     .sobre-nos {
         .area-card {
             margin: 0 5rem 2rem 5rem;
+
             .card {
                 display: flex;
                 width: 49%;
@@ -132,18 +175,21 @@
                 }
 
             }
+
             .card1 {
-                    background-color: $verde;
-                }
-                .card2 {
-                    background-color: $cor-vibrante-1;
-                }
-                .card3 {
+                background-color: $verde;
+            }
+
+            .card2 {
+                background-color: $cor-vibrante-1;
+            }
+
+            /* .card3 {
                     background-color: $cor-vibrante-1;
                 }
                 .card4 {
                     background-color: $verde;
-                }
+                } */
         }
     }
 }
@@ -151,7 +197,7 @@
 @media (min-width: 2000px) {
     .sobre-nos {
         .area-card {
-            margin: 0 25rem 2rem 25rem;
+            margin: 0 10rem 2rem 10rem;
             gap: 2rem;
         }
     }

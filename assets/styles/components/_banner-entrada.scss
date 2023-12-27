@@ -69,6 +69,14 @@
         }
     }
 
+    iframe {
+        width: 100%;
+        height: 30%;
+        border: 5px solid $verde;
+        border-radius: 20px;
+        margin-top: 1rem;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -89,6 +97,22 @@
             a {
                 font-size: $texto-tablet;
             }
+        }
+
+        iframe {
+            margin-top: 0;
+            width: 70%;
+            height: 30%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner-entrada {
+        iframe {
+            margin-top: 5rem;
+            width: 70%;
+            height: 30%;
         }
     }
 }
@@ -112,6 +136,13 @@
                 font-size: $texto-desktop;
             }
         }
+
+        iframe {
+            margin-top: 5rem;
+            width: 60%;
+            height: 40%;
+        }
+
     }
 }
 
@@ -133,6 +164,12 @@
             a {
                 font-size: $texto-desktop;
             }
+        }
+
+        iframe {
+            margin-top: 2rem;
+            width: 35%;
+            height: 40%;
         }
     }
 }

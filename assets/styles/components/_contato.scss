@@ -12,26 +12,30 @@
 
     background: url(../img/backgrounds/2.jpg);
     background-repeat: no-repeat;
-    background-position: right -600px center;
+    background-position: left -25px center;
     background-size: cover;
 
     color: white;
 
     h2 {
         font-size: $titulo;
-        
+
     }
+
     p {
         font-size: $texto;
     }
+
     .destaque {
         font-weight: 600;
     }
+
     a {
         text-decoration: none;
         color: white;
         font-weight: 600;
         text-transform: uppercase;
+
         &:hover {
             transform: scale(1.1);
         }
@@ -42,6 +46,7 @@
         border-radius: 100px;
         padding: 1rem;
         transition: 500ms;
+
         &:hover {
             background-color: $laranja-claro;
         }
@@ -51,7 +56,7 @@
 @media (min-width: 768px) {
     .contato {
         padding: 0 6rem;
-
+        background-position: left center;
         h2 {
             font-size: $titulo-tablet;
         }

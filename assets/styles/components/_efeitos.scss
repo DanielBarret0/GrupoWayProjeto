@@ -37,7 +37,7 @@
 .highlight {
     position: relative;
     display: inline-block;
-    z-index: 1;
+    z-index: -1;
 }
 
 .highlight::before {
@@ -65,36 +65,42 @@
 
 /* EFEITO SUBLINHADO ANIMADO */
 
+/* EFEITO SCROLL BAR */
 
-/* EFEITO RODAPE REDES */
-
-
-.scroll-section.active {
-    transform: scale(1.1);
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #F2FDFF;
 }
 
-@keyframes highlight {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.05);
-        /* Crescimento mais suave */
-    }
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
 }
 
-.scroll-section.active {
-    animation: highlight 0.5s ease, highlight-back 0.5s ease 0.5s;
-    /* Adição de uma segunda animação para retornar ao tamanho original */
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #ffffff63;
 }
 
-@keyframes highlight-back {
-    0% {
-        transform: scale(1.1);
-    }
+*::-webkit-scrollbar-track:hover {
+    background-color: #b8c0c200;
+}
 
-    100% {
-        transform: scale(1);
-    }
+*::-webkit-scrollbar-track:active {
+    background-color: #b8c0c200;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $verde;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: $verde-claro;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: $verde-escuro;
 }
