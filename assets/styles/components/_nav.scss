@@ -22,7 +22,7 @@
 
         .nav-imagem {
             width: 100px;
-            height: 50px;
+            height: 40px;
         }
     }
 }
@@ -53,6 +53,7 @@
 
 .menu>li {
     overflow: hidden;
+    text-align: center;
 }
 
 .menu-button-container {
@@ -160,7 +161,7 @@
 
 @media (min-width: 700px) {
     .top-nav {
-        padding: 0 2rem;
+        padding: 2rem 1.5rem;
         background: rgba(85, 105, 87, 0);
     }
 

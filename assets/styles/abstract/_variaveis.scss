@@ -2,26 +2,49 @@
 $fonte-principal: 'Poppins', sans-serif;
 $fonte-secundaria: 'Roboto', sans-serif;
 
-// Cores
+// Cores Grupo Way
+
+$cor-principal-grupo: #51ba5a;
 $verde: #51ba5a;
 $verde-claro: #6ad579;
 $verde-escuro: #3d9448;
+
 $laranja: #e15244;
 $laranja-claro: #f8a348;
-$amarelo-claro: #fee78a;
-$amarelo-pastel: #fff7bc;
 
-$cor-base: #51ba5a;
-$cor-vibrante-1: #408e46; /* Tom mais saturado e vibrante */
-$cor-vibrante-2: #367d3f; /* Tom ainda mais vibrante */
-$cor-forte-1: #336738; /* Tom mais forte */
-$cor-forte-2: #2b5c30; /* Tom ainda mais forte */
+// Cores Way Finance
+
+$cor-principal-finance: #51ba5a;
+$cor-semelhante-1-finance: #6ad579;
+$cor-semelhante-2-finance: #3d9448;
+
+
+// Cores Way Med
+
+$cor-principal-med: #c8df00;
+$cor-semelhante-1-med: #b7cc00;
+$cor-semelhante-2-med: #a6b500;
+
+
+// Cores Way Academy
+
+$cor-principal-academy: #6269b0;
+$cor-semelhante-1-academy: #555c95;
+$cor-semelhante-2-academy: #495084;
+
+
+// Cores Way Safe
+
+$cor-principal-safe: #52c7dc;
+$cor-semelhante-1-safe: #46b3ca;
+$cor-semelhante-2-safe: #3a9bb3;
+
 
 //Tamanho fontes
 $padrao: 16px;
 
 $texto: 16px;
-$titulo: 32px;
+$titulo: 24px;
 
 $texto-tablet: 20px;
 $titulo-tablet: 36px;
@@ -29,5 +52,4 @@ $titulo-tablet: 36px;
 $texto-desktop: 24px;
 $titulo-desktop: 42px;
 
-//espaçamento
-$padding: 1rem;
+

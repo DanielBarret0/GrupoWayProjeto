@@ -1,204 +1,89 @@
 @import '../abstract/variaveis';
 
-.sobre-nos {
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    height: 100vh;
+
+    background: url(../img/backgrounds/fundo-prime.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
     h2 {
-        color: $verde-escuro;
-        text-align: center;
-        font-weight: 600;
-        padding-top: 2rem;
+        font-size: $titulo;
+
     }
 
+    p {
+        font-size: $texto;
+    }
 
-    .area-card {
-        .card {
-            margin: 2rem;
-            background-color: $verde;
-            border-radius: 10px;
+    .destaque {
+        font-weight: 600;
+    }
 
-            img {
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-            }
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
 
-            .textos {
-                padding: 1rem;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                h3 {
-                    font-size: 1.2rem;
-                    font-weight: 600;
-                    padding-bottom: 1rem;
-                }
-
-                p {
-                    font-weight: 500;
-                }
-            }
-
-            .redes-socias {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-                flex-direction: column;
-                align-self: baseline;
-
-                h3 {
-                    padding-top: 1rem;
-                    color: white;
-                }
-
-                .redes {
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    text-align: center;
-                    a {
-                        i {
-                            color: white;
-                            font-size: 1.5rem;
-                            padding: 0.2rem 0.5rem;
-                            transition: 200ms;
-                            &:hover {
-                                background-color: white;
-                                color: $verde;
-                                border-radius: 10px;
-                            }
-                        }
-                    }
-                }
-
-            }
+        &:hover {
+            transform: scale(1.1);
         }
+    }
 
-        .card1 {
-            background-color: $verde;
-        }
+    .botao {
+        background-color: $laranja;
+        border-radius: 100px;
+        padding: 1rem;
+        transition: 500ms;
 
-        .card2 {
-            background-color: $cor-vibrante-1;
-        }
-
-        .card3 {
-            background-color: $verde;
-        }
-
-        .card4 {
-            background-color: $cor-vibrante-1;
+        &:hover {
+            background-color: $laranja-claro;
+            text-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 2px 6px 5px 0px rgba(0,0,0,0.75);
         }
     }
 }
 
 @media (min-width: 768px) {
-    .sobre-nos {
-        padding-bottom: 2rem;
+    .sobre {
+        padding: 0 6rem;
+        background-position: center;
 
         h2 {
-            padding-bottom: 2rem;
             font-size: $titulo-tablet;
         }
 
-        .area-card {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
+        p {
+            font-size: $texto-tablet;
+        }
 
-            .card {
-                display: flex;
-                width: 80%;
-                margin: 0;
-
-                img {
-                    width: 350px;
-                    height: 100%;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 0;
-                    border-bottom-left-radius: 10px;
-                }
-
-                .textos {
-                    padding: 1rem;
-                    color: white;
-
-                    h3 {
-                        font-weight: 600;
-                        padding-bottom: 1rem;
-                        font-size: 1.5rem;
-                    }
-
-                    p {
-                        font-weight: 500;
-                        font-size: 1.2rem;
-                    }
-                }
-            }
+        a {
+            font-size: $texto-tablet;
         }
     }
 }
 
 @media (min-width: 1440px) {
-    .sobre-nos {
-        .area-card {
-            margin: 0 5rem 2rem 5rem;
-
-            .card {
-                display: flex;
-                width: 49%;
-                margin: 0;
-
-                img {
-                    width: 350px;
-                    height: 100%;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 0;
-                    border-bottom-left-radius: 10px;
-                }
-
-                .textos {
-                    padding: 1rem;
-                    color: white;
-
-                    h3 {
-                        font-weight: 600;
-                        padding-bottom: 1rem;
-                        font-size: 1.5rem;
-                    }
-
-                    p {
-                        font-weight: 500;
-                        font-size: 1.2rem;
-                    }
-                }
-
-            }
-
-            .card1 {
-                background-color: $verde;
-            }
-
-            .card2 {
-                background-color: $cor-vibrante-1;
-            }
-
-            /* .card3 {
-                    background-color: $cor-vibrante-1;
-                }
-                .card4 {
-                    background-color: $verde;
-                } */
-        }
+    .sobre {
+        background-position: center;
+        padding: 0 10rem;
     }
 }
 
 @media (min-width: 2000px) {
-    .sobre-nos {
-        .area-card {
-            margin: 0 10rem 2rem 10rem;
-            gap: 2rem;
-        }
+    .sobre {
+        background-position: center;
+        padding: 0 35rem;
     }
 }

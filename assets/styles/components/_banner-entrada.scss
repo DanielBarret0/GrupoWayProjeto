@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    padding: $padding;
+    padding: 1rem;
     height: 100vh;
 
     //background: url(../img/backgrounds/1.jpg);
@@ -41,11 +41,15 @@
         h2 {
             font-size: $titulo;
             .highlight {
-                font-size: 1.5rem;
+                font-size: $titulo;
             }
         }
         p {
             font-size: $texto;
+        }
+
+        .texto-paragrafo {
+            font-size: 1rem;
         }
 
         a {
@@ -81,6 +85,7 @@
 
 @media (min-width: 768px) {
     .banner-entrada {
+        justify-content: space-evenly;
         .textos {
             padding: 0 6rem;
             h2 {
@@ -109,6 +114,7 @@
 
 @media (min-width: 1024px) {
     .banner-entrada {
+        justify-content: center;
         iframe {
             margin-top: 5rem;
             width: 70%;

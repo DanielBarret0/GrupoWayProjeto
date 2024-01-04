@@ -5,18 +5,23 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: $padding;
-    gap: 2rem;
+    padding: 1rem;
 
-    .logo-desktop {
-        display: none;
-        width: 250px;
-        height: 100px;
+    .rodape__imagem {
+        img {
+            width: 220px;
+            height: 90px;
+        }
     }
 
     .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
@@ -25,6 +30,7 @@
         ul {
             li {
                 list-style: none;
+                text-align: center;
 
                 a {
                     color: white;
@@ -39,37 +45,32 @@
         }
     }
 
-    .container-2 {
-        text-align: right;
-    }
-
     .redes {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
-        img {
-            width: 250px;
-            height: 100px;
-        }
+
         .titulo {
             h3 {
                 font-size: 1.2rem;
                 margin-bottom: 0.5rem;
+                text-align: center;
             }
         }
+
         .icones-redes {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
 
-            a{
+            a {
                 i {
                     font-size: 1.5rem;
                     padding: 0.2rem 0.5rem;
                     transition: 200ms;
+
                     &:hover {
                         background-color: white;
                         color: $verde;
@@ -84,21 +85,32 @@
 @media (min-width: 700px) {
     .rodape {
         padding: 2rem;
-        .container-2 {
-            text-align: left;
+        .rodape__imagem {
+            order: 2;
+        }
+
+        .redes {
+            order: 3;
+        }
+
+        .container {
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-direction: row;
+            
+            gap: 1rem;
+            ul {
+                li {
+                    text-align: left;
+                }
+            }
         }
     }
 }
 
 @media (min-width: 1024px) {
     .rodape {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: space-evenly;
-        align-items: center;
-        .logo-desktop {
-            display: block;
-        }
+        
         .redes {
             img {
                 display: none;
@@ -109,14 +121,30 @@
 
 @media (min-width: 1440px) {
     .rodape {
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-
+        padding: 2rem 25rem;
         .redes {
             margin: 0;
+
             .icones-redes {
-                a{
+                a {
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 2000px)  {
+    .rodape {
+        padding: 2rem 30rem;
+        .redes {
+            margin: 0;
+
+            .icones-redes {
+                a {
                     i {
                         font-size: 2rem;
                     }
