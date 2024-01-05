@@ -696,6 +696,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 1rem;
 }
@@ -755,6 +756,7 @@ body {
 
 @media (min-width: 700px) {
   .rodape {
+    flex-direction: row;
     padding: 2rem;
   }
   .rodape .rodape__imagem {
