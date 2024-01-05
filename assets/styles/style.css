@@ -75,13 +75,11 @@ body {
 
 /* EFEITO SUBLINHADO ANIMADO */
 /* EFEITO SCROLL BAR */
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #397524 #F2FDFF;
 }
 
-/* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
   height: 10px;
   width: 10px;
@@ -113,7 +111,35 @@ body {
   background-color: #3d9448;
 }
 
-/* TESTE DO EFEITO */
+/* Botao voltar ao topo */
+.voltar-ao-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.voltar-ao-topo a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(90deg, rgb(98, 105, 176) 0%, rgb(82, 199, 220) 100%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+  transition: 300ms;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.voltar-ao-topo a:hover {
+  transform: scale(1.05);
+}
+
+body.rolado .voltar-ao-topo {
+  display: block;
+}
+
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -315,10 +341,10 @@ body {
   justify-content: center;
   gap: 1rem;
 }
-.banner-entrada .textos h2 {
+.banner-entrada .textos h1 {
   font-size: 24px;
 }
-.banner-entrada .textos h2 .highlight {
+.banner-entrada .textos h1 .highlight {
   font-size: 24px;
 }
 .banner-entrada .textos p {
@@ -345,10 +371,10 @@ body {
   .banner-entrada .textos {
     padding: 0 6rem;
   }
-  .banner-entrada .textos h2 {
+  .banner-entrada .textos h1 {
     font-size: 36px;
   }
-  .banner-entrada .textos h2 .highlight {
+  .banner-entrada .textos h1 .highlight {
     font-size: 36px;
   }
   .banner-entrada .textos p {
@@ -374,10 +400,10 @@ body {
   .banner-entrada .textos {
     padding: 0 10rem;
   }
-  .banner-entrada .textos h2 {
+  .banner-entrada .textos h1 {
     font-size: 42px;
   }
-  .banner-entrada .textos h2 .highlight {
+  .banner-entrada .textos h1 .highlight {
     font-size: 42px;
   }
   .banner-entrada .textos p {
@@ -393,10 +419,10 @@ body {
   .banner-entrada .textos {
     padding: 0 35rem;
   }
-  .banner-entrada .textos h2 {
+  .banner-entrada .textos h1 {
     font-size: 42px;
   }
-  .banner-entrada .textos h2 .highlight {
+  .banner-entrada .textos h1 .highlight {
     font-size: 42px;
   }
   .banner-entrada .textos p {
@@ -458,7 +484,7 @@ body {
   justify-content: flex-start;
   transition: 500ms;
   padding-bottom: 1rem;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .grupos .container__cards .card .imagem {
   width: 100%;
@@ -531,9 +557,6 @@ body {
   }
   .grupos .container__cards .card {
     width: 400px;
-    /* &:hover {
-        transform: scale(1.02);
-    } */
   }
   .grupos .container__cards .card .card__textos .card__titulo {
     font-size: 1.2rem;
@@ -556,7 +579,7 @@ body {
     transition: all 0.2s;
   }
   .grupos .container__cards .card:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     transform: scale(1.01);
   }
   .grupos .container__cards .card .card__textos .card__titulo {
@@ -630,9 +653,11 @@ body {
   transition: background-position 0.5s ease;
   background-size: 200% 100%;
   background-image: linear-gradient(to right, #51ba5a, #c8df00);
+  transition: 200ms;
 }
 .sobre .botao:hover {
   background-position: -100% 0;
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {
@@ -720,10 +745,11 @@ body {
   font-size: 1.5rem;
   padding: 0.2rem 0.5rem;
   transition: 200ms;
+  color: white;
 }
 .rodape .redes .icones-redes a i:hover {
   background-color: white;
-  color: #51ba5a;
+  color: #3d9448;
   border-radius: 10px;
 }
 

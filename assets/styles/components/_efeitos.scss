@@ -69,13 +69,11 @@
 
 /* EFEITO SCROLL BAR */
 
-/* Firefox */
 * {
     scrollbar-width: thin;
     scrollbar-color: #397524 #F2FDFF;
 }
 
-/* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
     height: 10px;
     width: 10px;
@@ -108,4 +106,33 @@
 }
 
 
-/* TESTE DO EFEITO */
+/* Botao voltar ao topo */
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    
+}
+
+.voltar-ao-topo a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: $gradiente-azul;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    transition: 300ms;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+body.rolado .voltar-ao-topo {
+    display: block;
+}

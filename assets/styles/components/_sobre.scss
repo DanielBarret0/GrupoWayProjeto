@@ -44,9 +44,11 @@
         transition: background-position 0.5s ease;
         background-size: 200% 100%;
         background-image: $gradiente-animado;
+        transition: 200ms;
 
         &:hover {
             background-position: -100% 0;
+            transform: scale(1.05);
         }
     }
 }
