@@ -6,11 +6,7 @@
     align-items: center;
     justify-content: space-between;
 
-    background: rgba(85, 105, 87, 0);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-
+    background: $gradiente-verde-nav;
     color: #FFF;
     height: 50px;
     padding: 0.5rem;
@@ -143,7 +139,7 @@
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        background: $verde-escuro;
+        background: $gradiente-verde-nav;
         
         &:hover {
             background: $verde;

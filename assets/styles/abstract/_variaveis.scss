@@ -8,9 +8,11 @@ $cor-principal-grupo: #51ba5a;
 $verde: #51ba5a;
 $verde-claro: #6ad579;
 $verde-escuro: #3d9448;
+$gradiente-verde: linear-gradient(90deg, rgba(81, 186, 90, 1) 0%, rgba(200, 223, 0, 1) 100%);
+$gradiente-verde-nav: linear-gradient(85deg, rgba(81,186,90,1) 65%, rgba(141,157,0,1) 100%);
+$gradiente-azul: linear-gradient(90deg, rgba(98,105,176,1) 0%, rgba(82,199,220,1) 100%);
 
-$laranja: #e15244;
-$laranja-claro: #f8a348;
+$gradiente-animado: linear-gradient(to right, #51ba5a, #c8df00);
 
 // Cores Way Finance
 

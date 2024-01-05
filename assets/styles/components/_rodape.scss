@@ -1,7 +1,9 @@
 @import '../abstract/variaveis';
 
 .rodape {
-    background-color: $verde;
+    //background-color: $verde;
+    background: rgb(81, 186, 90);
+    background: $gradiente-verde;
     color: white;
     display: flex;
     align-items: center;
@@ -87,6 +89,7 @@
     .rodape {
         flex-direction: row;
         padding: 2rem;
+
         .rodape__imagem {
             order: 2;
         }
@@ -99,8 +102,9 @@
             justify-content: space-evenly;
             align-items: flex-start;
             flex-direction: row;
-            
+
             gap: 1rem;
+
             ul {
                 li {
                     text-align: left;
@@ -112,7 +116,7 @@
 
 @media (min-width: 1024px) {
     .rodape {
-        
+
         .redes {
             img {
                 display: none;
@@ -124,6 +128,7 @@
 @media (min-width: 1440px) {
     .rodape {
         padding: 2rem 25rem;
+
         .redes {
             margin: 0;
 
@@ -139,9 +144,10 @@
 }
 
 
-@media (min-width: 2000px)  {
+@media (min-width: 2000px) {
     .rodape {
         padding: 2rem 30rem;
+
         .redes {
             margin: 0;
 

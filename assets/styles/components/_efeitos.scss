@@ -19,7 +19,9 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: $laranja;
+    //background-color: $laranja;
+    background: rgb(81, 186, 90);
+    background: $gradiente-verde;
     transition: width 0.3s;
 }
 
@@ -48,7 +50,7 @@
     width: 0;
     /* Inicialmente sem largura */
     height: 100%;
-    background-color: $verde;
+    background: $gradiente-verde;
     /* Cor de fundo da marcação */
     mix-blend-mode: multiply;
     /* Define o modo de mistura para que a cor de fundo não cubra o texto */
@@ -94,7 +96,7 @@
 
 *::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: $verde;
+    background: $gradiente-verde;
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -107,4 +109,3 @@
 
 
 /* TESTE DO EFEITO */
-
