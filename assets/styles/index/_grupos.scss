@@ -61,6 +61,7 @@
             padding-bottom: 1rem; // TESTE DE BORDA PARA BAIXO DO CARD;
 
             box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
             .imagem {
                 width: 100%;
 
@@ -160,6 +161,7 @@
 
             .card {
                 width: 400px;
+
                 .card__textos {
                     .card__titulo {
                         font-size: 1.2rem;
@@ -206,6 +208,23 @@
             }
         }
     }
+}
+
+@media (min-width: 1366px) {
+    .grupos {
+        .container__cards {
+            .card {
+                width: 425px;
+            }
+
+            .card__textos {
+                justify-content: center;
+                gap: 0.5rem;
+                padding: 1rem;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1440px) {

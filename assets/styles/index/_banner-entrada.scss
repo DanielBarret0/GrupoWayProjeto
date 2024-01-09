@@ -105,9 +105,9 @@
         justify-content: center;
 
         iframe {
-            margin-top: 5rem;
-            width: 70%;
-            height: 30%;
+            margin-top: 0;
+            width: 50%;
+            height: 40%;
         }
 
         .textos {
@@ -118,8 +118,23 @@
     }
 }
 
+@media (min-width: 1366px) {
+    .banner-entrada {
+        justify-content: flex-start;
+        gap: 4rem;
+        iframe {
+            margin-top: 1rem;
+            width: 50%;
+            height: 45%;
+        }
+    }
+}
+
 @media (min-width: 1440px) {
     .banner-entrada {
+        justify-content: center;
+        gap: 1rem;
+        
         .textos {
             padding: 0 10rem;
 
@@ -137,9 +152,9 @@
         }
 
         iframe {
-            margin-top: 5rem;
-            width: 60%;
-            height: 40%;
+            margin-top: 0;
+            width: 45%;
+            height: 45%;
         }
 
     }
@@ -164,9 +179,9 @@
         }
 
         iframe {
-            margin-top: 2rem;
+            margin-top: 0;
             width: 35%;
-            height: 40%;
+            height: 45%;
         }
     }
 }
