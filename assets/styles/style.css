@@ -560,6 +560,11 @@ body.rolado .voltar-ao-topo {
   text-decoration: underline;
 }
 
+@media (min-width: 500px) {
+  .container__cards .card {
+    width: 370px;
+  }
+}
 @media (min-width: 700px) {
   .grupos .grupos__textos h2 {
     font-size: 36px;
@@ -762,6 +767,7 @@ body.rolado .voltar-ao-topo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 }
 .rodape .redes .titulo h3 {
   font-size: 1.2rem;
@@ -796,6 +802,7 @@ body.rolado .voltar-ao-topo {
   }
   .rodape .redes {
     order: 3;
+    padding-top: 0;
   }
   .rodape .container {
     justify-content: space-evenly;

@@ -141,6 +141,14 @@
     }
 }
 
+@media (min-width: 500px) {
+    .container__cards {
+        .card {
+            width: 370px;
+        }
+    }
+}
+
 @media (min-width: 700px) {
     .grupos {
         .grupos__textos {
