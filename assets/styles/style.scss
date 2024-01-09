@@ -1,8 +1,32 @@
-@import './abstract/base';
-@import '../styles/components/efeitos'; 
 
-@import '../styles/components/nav.scss'; 
-@import '../styles/components/banner-entrada'; 
-@import '../styles/components/grupos'; 
-@import '../styles/components/sobre'; 
-@import '../styles/components/rodape'; 
+// Base
+@import '../styles/abstract/base';
+@import '../styles/abstract/variaveis';
+@import '../styles/base/reset';
+// ...
+
+// Components
+@import '//assets/styles/components/botao';
+// ...
+
+// Layouts
+@import '../styles/layouts//efeitos';
+// ...
+
+// Page index
+@import '../styles/index/nav';
+@import '../styles/index/banner-entrada';
+@import '../styles/index/grupos';
+@import '../styles/index/sobre';
+@import '../styles/index/rodape';
+// 
+
+// Way Finance
+
+@import '../styles/way-finance/nav-finance';
+@import '../styles/way-finance/banner-entrada-finance';
+@import '../styles/way-finance/metodo-finance';
+@import '../styles/way-finance//rodape-finance';
+
+
+//

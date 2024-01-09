@@ -1,13 +1,7 @@
-@import '../abstract/variaveis';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+@import '../abstract/variaveis';
 
 body {
     font-family: $fonte-principal;
-    font-size: $padrao;
+    font-size: 16px;
 }

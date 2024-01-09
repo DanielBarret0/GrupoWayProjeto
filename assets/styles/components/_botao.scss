@@ -1,0 +1,20 @@
+@import '../abstract/variaveis';
+
+.botao {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 100px;
+    padding: 1rem;
+    transition: background-position 0.5s ease;
+    background-size: 200% 100%;
+    background-image: $gradiente-animado;
+    transition: 200ms;
+
+    &:hover {
+        background-position: -100% 0;
+        transform: scale(1.05);
+    }
+}

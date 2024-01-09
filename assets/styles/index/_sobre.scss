@@ -1,0 +1,87 @@
+@import '../abstract/variaveis';
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    height: 100vh;
+
+    background: url(../img/backgrounds/fundo-prime.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
+    h2 {
+        font-size: $titulo;
+
+    }
+
+    p {
+        font-size: $texto;
+    }
+
+    .destaque {
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .botao {
+        border-radius: 100px;
+        padding: 1rem;
+        transition: background-position 0.5s ease;
+        background-size: 200% 100%;
+        background-image: $gradiente-animado;
+        transition: 200ms;
+
+        &:hover {
+            background-position: -100% 0;
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .sobre {
+        padding: 0 6rem;
+        background-position: center;
+
+        h2 {
+            font-size: $titulo-tablet;
+        }
+
+        p {
+            font-size: $texto-tablet;
+        }
+
+        a {
+            font-size: $texto-tablet;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .sobre {
+        background-position: center;
+        padding: 0 10rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .sobre {
+        background-position: center;
+        padding: 0 35rem;
+    }
+}
