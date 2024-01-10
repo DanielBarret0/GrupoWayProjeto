@@ -1347,7 +1347,7 @@ body.rolado .voltar-ao-topo {
     width: 300px;
   }
 }
-.card {
+.card-finance-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1355,10 +1355,10 @@ body.rolado .voltar-ao-topo {
   background-color: #51ba5a;
   padding: 2rem 1rem;
 }
-.card img {
+.card-finance-page img {
   width: 360px;
 }
-.card .textos__card {
+.card-finance-page .textos__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1366,69 +1366,69 @@ body.rolado .voltar-ao-topo {
   gap: 1rem;
   color: white;
 }
-.card .textos__card h3 {
+.card-finance-page .textos__card h3 {
   text-align: center;
   font-size: 24px;
 }
-.card .textos__card p {
+.card-finance-page .textos__card p {
   font-size: 16px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  .card img {
+  .card-finance-page img {
     width: 380px;
   }
-  .card .textos__card h3 {
+  .card-finance-page .textos__card h3 {
     text-align: center;
     font-size: 36px;
   }
-  .card .textos__card p {
+  .card-finance-page .textos__card p {
     text-align: center;
     font-size: 20px;
   }
 }
 @media (min-width: 768px) {
-  .card {
+  .card-finance-page {
     padding: 2rem 6rem;
   }
-  .card img {
+  .card-finance-page img {
     width: 380px;
   }
-  .card .textos__card h3 {
+  .card-finance-page .textos__card h3 {
     text-align: center;
     font-size: 36px;
   }
-  .card .textos__card p {
+  .card-finance-page .textos__card p {
     text-align: center;
     font-size: 20px;
   }
 }
 @media (min-width: 1024px) {
-  .card {
+  .card-finance-page {
     flex-direction: row;
     padding: 2rem 6rem;
     gap: 1rem;
   }
-  .card img {
+  .card-finance-page img {
     width: 380px;
   }
 }
 @media (min-width: 1366px) {
-  .card {
+  .card-finance-page {
     flex-direction: row;
     padding: 2rem 12rem;
   }
-  .card img {
+  .card-finance-page img {
     width: 500px;
   }
 }
 @media (min-width: 2000px) {
-  .card {
+  .card-finance-page {
     flex-direction: row;
     padding: 2rem 35rem;
   }
-  .card img {
+  .card-finance-page img {
     width: 700px;
   }
 }
