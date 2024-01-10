@@ -66,7 +66,6 @@
         border-image-slice: 1;
         border-radius: 10px;
 
-        //border: 5px solid $cor-principal-finance;
         margin-top: 1rem;
     }
 
@@ -103,40 +102,39 @@
 @media (min-width: 1024px) {
     .banner-entrada {
         justify-content: center;
+        flex-direction: row;
 
         iframe {
             margin-top: 0;
-            width: 50%;
-            height: 40%;
+            width: 125%;
+            height: 50%;
         }
 
         .textos {
+            margin: 0;
+            padding: 0;
+
+            h1 {
+                font-size: $titulo-tablet;
+            }
             p {
-                font-size: $texto-desktop;
+                font-size: $texto-tablet;
             }
         }
     }
 }
 
 @media (min-width: 1366px) {
-    .banner-entrada {
-        justify-content: flex-start;
-        gap: 4rem;
-        iframe {
-            margin-top: 1rem;
-            width: 50%;
-            height: 45%;
-        }
-    }
 }
 
 @media (min-width: 1440px) {
     .banner-entrada {
         justify-content: center;
         gap: 1rem;
-        
+
         .textos {
-            padding: 0 10rem;
+            padding: 0;
+            margin: 0;
 
             h1 {
                 font-size: $titulo-desktop;
@@ -153,8 +151,8 @@
 
         iframe {
             margin-top: 0;
-            width: 45%;
-            height: 45%;
+            width: 120%;
+            height: 60%;
         }
 
     }
@@ -162,8 +160,10 @@
 
 @media (min-width: 2000px) {
     .banner-entrada {
+        padding: 0 15rem;
         .textos {
-            padding: 0 35rem;
+            padding: 0;
+            margin: 0;
 
             h1 {
                 font-size: $titulo-desktop;
@@ -180,8 +180,8 @@
 
         iframe {
             margin-top: 0;
-            width: 35%;
-            height: 45%;
+            width: 100%;
+            height: 40%;
         }
     }
 }

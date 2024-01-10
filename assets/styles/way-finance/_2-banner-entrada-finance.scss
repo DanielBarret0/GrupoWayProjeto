@@ -98,30 +98,29 @@
 @media (min-width: 1024px) {
     .banner-entrada-finance {
         justify-content: center;
+        flex-direction: row;
 
         .iframe-finance {
             margin-top: 0;
-            width: 50%;
-            height: 40%;
+            width: 125%;
+            height: 50%;
         }
 
         .textos {
+            margin: 0;
+            padding: 0;
+            h1 {
+                font-size: $titulo-tablet;
+            }
             p {
-                font-size: $texto-desktop;
+                font-size: $texto-tablet;
             }
         }
     }
 }
 
 @media (min-width: 1366px) {
-    .banner-entrada-finance {
-        justify-content: center;
-        .iframe-finance  {
-            margin-top: 1rem;
-            width: 50%;
-            height: 45%;
-        }
-    }
+
 }
 
 
@@ -130,7 +129,8 @@
         justify-content: center;
         gap: 1rem;
         .textos {
-            padding: 0 10rem;
+            padding: 0;
+            margin: 0;
 
             h1 {
                 font-size: $titulo-desktop;
@@ -147,8 +147,8 @@
 
         .iframe-finance {
             margin-top: 0;
-            width: 45%;
-            height: 45%;
+            width: 120%;
+            height: 60%;
         }
 
     }
@@ -156,8 +156,10 @@
 
 @media (min-width: 2000px) {
     .banner-entrada-finance {
+        padding: 0 15rem;
         .textos {
-            padding: 0 35rem;
+            padding: 0;
+            margin: 0;
 
             h1 {
                 font-size: $titulo-desktop;
@@ -174,8 +176,8 @@
 
         .iframe-finance {
             margin-top: 0;
-            width: 35%;
-            height: 45%;
+            width: 100%;
+            height: 40%;
         }
     }
 }

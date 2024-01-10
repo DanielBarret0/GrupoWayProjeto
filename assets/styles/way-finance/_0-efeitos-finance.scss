@@ -1,0 +1,29 @@
+/* EFEITO SUBLINHADO ANIMADO */
+#pagina-2 {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+#pagina-2 ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sem largura */
+    height: 100%;
+    background: $verde;
+    /* Cor de fundo da marcação */
+    mix-blend-mode: multiply;
+    /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+    z-index: -1;
+    /* Coloca o pseudo-elemento abaixo do texto */
+    transition: width 2s ease-out;
+    /* Adiciona uma transição para suavizar a animação */
+    border-radius: 5px;
+}
+
+#pagina-2 .active::before {
+    width: 100%;
+}
