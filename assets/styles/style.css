@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import '//assets/styles/components/botao';
+@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -1166,12 +1168,41 @@ body.rolado .voltar-ao-topo {
   transform: scale(1.05);
 }
 
+.botao-branco {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 100px;
+  padding: 1rem;
+  background-color: none;
+  border: 2px solid white;
+  transition: 200ms;
+}
+.botao-branco:hover {
+  box-shadow: 5px 5px 0px 0px rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+.botao-1 {
+  padding: 1rem 2rem;
+  background-color: #51ba5a;
+  color: white;
+  width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
 .metodos {
   padding: 1rem;
 }
 .metodos .textos h2 {
   text-align: center;
   font-size: 24px;
+  color: #51ba5a;
 }
 .metodos .textos p {
   font-size: 16px;
@@ -1191,11 +1222,6 @@ body.rolado .voltar-ao-topo {
   padding: 35px 15px;
   width: 100%;
   gap: 2rem;
-}
-@media screen and (min-width: 1380px) {
-  .metodos .box-container {
-    flex-direction: row;
-  }
 }
 .metodos .box-item {
   position: relative;
@@ -1275,31 +1301,462 @@ body.rolado .voltar-ao-topo {
   padding: 15px 20px;
   text-transform: uppercase;
 }
-.metodos .card {
+
+@media screen and (min-width: 768px) {
+  .metodos .textos {
+    padding: 1rem 5rem 4rem 5rem;
+  }
+  .metodos .box-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .metodos .box-container .box-item {
+    width: 330px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .metodos .textos {
+    padding: 0 10rem;
+  }
+  .metodos .box-container .box-item {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .metodos .textos {
+    padding: 0 10rem;
+  }
+  .metodos .box-container .box-item {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .metodos .textos {
+    padding: 0 20rem;
+  }
+  .metodos .box-container .box-item {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .metodos .textos {
+    padding: 0 55rem;
+  }
+  .metodos .box-container .box-item {
+    width: 300px;
+  }
+}
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #51ba5a;
+  padding: 2rem 1rem;
 }
-.metodos .card img {
+.card img {
   width: 360px;
 }
-.metodos .card .textos__card {
+.card .textos__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+}
+.card .textos__card h3 {
+  text-align: center;
+  font-size: 24px;
+}
+.card .textos__card p {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card img {
+    width: 380px;
+  }
+  .card .textos__card h3 {
+    text-align: center;
+    font-size: 36px;
+  }
+  .card .textos__card p {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    padding: 2rem 6rem;
+  }
+  .card img {
+    width: 380px;
+  }
+  .card .textos__card h3 {
+    text-align: center;
+    font-size: 36px;
+  }
+  .card .textos__card p {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    flex-direction: row;
+    padding: 2rem 6rem;
+    gap: 1rem;
+  }
+  .card img {
+    width: 380px;
+  }
+}
+@media (min-width: 1366px) {
+  .card {
+    flex-direction: row;
+    padding: 2rem 12rem;
+  }
+  .card img {
+    width: 500px;
+  }
+}
+@media (min-width: 2000px) {
+  .card {
+    flex-direction: row;
+    padding: 2rem 35rem;
+  }
+  .card img {
+    width: 700px;
+  }
+}
+.sua-empresa .sua-empresa-texto {
+  text-align: center;
+  font-size: 16px;
+  padding: 1rem;
+}
+.sua-empresa .box-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .sua-empresa .sua-empresa-texto {
+    padding: 2rem 5rem;
+  }
+  .sua-empresa .box-card {
+    padding: 1rem 4rem;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sua-empresa .sua-empresa-texto {
+    padding: 2rem 12rem;
+  }
+  .sua-empresa .box-card {
+    padding: 1rem 12rem;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .sua-empresa .sua-empresa-texto {
+    padding: 2rem 20rem;
+  }
+  .sua-empresa .box-card {
+    padding: 1rem 20rem;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+@media (min-width: 2000px) {
+  .sua-empresa .sua-empresa-texto {
+    padding: 2rem 55rem;
+  }
+}
+.box-info {
+  --color: rgba(30, 30, 30);
+  --bgColor: rgb(255, 255, 255);
+  height: auto;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: var(--color);
+  background: var(--bgColor);
+}
+.box-info .box-info-texto {
+  text-align: center;
+}
+.box-info .box-info-texto h2 {
+  color: #51ba5a;
+  font-size: 24px;
+}
+.box-info .box-info-texto p {
+  font-size: 16px;
+}
+
+ol {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  counter-reset: stepnr;
+}
+
+li:nth-child(6n+1) {
+  --accent-color: #b8df4e ;
+}
+
+li:nth-child(6n+2) {
+  --accent-color: #4cbccb ;
+}
+
+li:nth-child(6n+3) {
+  --accent-color: #7197d3 ;
+}
+
+li:nth-child(6n+4) {
+  --accent-color: #ae78cb ;
+}
+
+li:nth-child(6n+5) {
+  --accent-color: #7dc7a4 ;
+}
+
+li:nth-child(6n+6) {
+  --accent-color: #f078c2 ;
+}
+
+ol li {
+  counter-increment: stepnr;
+  width: 18rem;
+  --borderS: 1rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: calc(var(--borderS) + 2rem);
+  position: relative;
+}
+
+ol li::before,
+ol li::after {
+  inset: 0;
+  position: absolute;
+  border-radius: 20%;
+  border: var(--borderS) solid var(--bgColor);
+}
+
+ol li::before {
+  content: counter(stepnr);
+  color: var(--accent-color);
+  padding-left: 10rem;
+  font-size: 12rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+ol li::after {
+  content: "";
+  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+}
+
+ol li > * {
+  width: 7.5rem;
+}
+
+ol li .icon {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  text-align: left;
+}
+
+ol li .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+ol li .descr {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.credits {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.credits a {
+  color: var(--color);
+}
+
+@media (min-width: 768px) {
+  .box-info .box-info-texto {
+    padding: 2rem 8rem;
+    text-align: center;
+  }
+  .box-info .box-info-texto h2 {
+    color: #51ba5a;
+    font-size: 24px;
+  }
+  .box-info .box-info-texto p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  ol {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 2000px) {
+  ol {
+    width: auto;
+  }
+}
+.sobre-nos {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.sobre-nos h2 {
+  color: #51ba5a;
+  font-size: 24px;
+}
+.sobre-nos .sobre-nos_cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.metodos .card .textos__card h3 {
-  text-align: center;
-  font-size: 24px;
+.sobre-nos .sobre-nos_cards figure {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  min-width: 360px;
+  height: 667px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
 }
-.metodos .card .textos__card p {
-  font-size: 16px;
+.sobre-nos .sobre-nos_cards figure:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.sobre-nos .sobre-nos_cards figure:hover h2 {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.sobre-nos .sobre-nos_cards figure:hover img {
+  transform: scale(1.25);
+}
+.sobre-nos .sobre-nos_cards figure:hover figcaption {
+  bottom: 0;
+}
+.sobre-nos .sobre-nos_cards figure h2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 1;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.25s ease;
+  z-index: 3;
+}
+.sobre-nos .sobre-nos_cards figure img {
+  height: 100%;
+  transition: 0.25s;
+}
+.sobre-nos .sobre-nos_cards figure figcaption {
+  position: absolute;
+  bottom: -87%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+.sobre-nos .sobre-nos_cards figure figcaption h3 {
+  margin: 0 0 15px;
+  padding: 0;
+}
+.sobre-nos .sobre-nos_cards figure figcaption p {
+  font-size: 14px;
+  line-height: 1.75;
+  padding-bottom: 0.5rem;
+}
+.sobre-nos .sobre-nos_cards .redes-socias {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-self: baseline;
+}
+.sobre-nos .sobre-nos_cards .redes-socias .redes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   text-align: center;
+}
+.sobre-nos .sobre-nos_cards .redes-socias .redes a i {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  transition: 200ms;
+  cursor: pointer;
+}
+.sobre-nos .sobre-nos_cards .redes-socias .redes a i:hover {
+  color: #51ba5a;
+  border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .sobre-nos .sobre-nos_cards {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .sobre-nos .sobre-nos_cards figure {
+    width: 400px;
+    min-width: 360px;
+    height: 610px;
+  }
+}
+@media (min-width: 2000px) {
+  .sobre-nos .sobre-nos_cards figure {
+    width: 400px;
+    min-width: 360px;
+    height: 610px;
+  }
+}
 .rodape-finance {
   background-color: #51ba5a;
   color: white;

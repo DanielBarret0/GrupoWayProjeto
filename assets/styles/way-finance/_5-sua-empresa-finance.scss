@@ -1,0 +1,62 @@
+.sua-empresa {
+    .sua-empresa-texto {
+        text-align: center;
+        font-size: $texto;
+        padding: 1rem;
+    }
+
+    .box-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .sua-empresa {
+        .sua-empresa-texto {
+            padding: 2rem 5rem;
+        }
+        .box-card {
+            padding: 1rem 4rem;
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .sua-empresa {
+        .sua-empresa-texto {
+            padding: 2rem 12rem;
+        }
+        .box-card {
+            padding: 1rem 12rem;
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .sua-empresa {
+        .sua-empresa-texto {
+            padding: 2rem 20rem;
+        }
+        .box-card {
+            padding: 1rem 20rem;
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 2000px) {
+    .sua-empresa {
+        .sua-empresa-texto {
+            padding: 2rem 55rem;
+        }
+    }
+}
