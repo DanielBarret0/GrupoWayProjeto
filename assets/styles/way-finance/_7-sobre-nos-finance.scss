@@ -21,7 +21,9 @@
         justify-content: center;
         gap: 1rem;
 
-        figure {
+
+        /* CARD 1 */
+        .image-block-0 {
             position: relative;
             display: flex;
             align-items: center;
@@ -41,21 +43,21 @@
                     0 14px 28px rgba(0, 0, 0, 0.25),
                     0 10px 10px rgba(0, 0, 0, 0.22);
 
-                h2 {
+                .titulo-block-0 {
                     opacity: 0;
                     transform: scale(0.7);
                 }
 
-                img {
+                .imagem-block-0 {
                     transform: scale(1.25);
                 }
 
-                figcaption {
+                .descricao-block-0 {
                     bottom: 0;
                 }
             }
 
-            h2 {
+            .titulo-block-0 {
                 position: absolute;
                 top: 20px;
                 left: 20px;
@@ -71,14 +73,14 @@
                 z-index: 3;
             }
 
-            img {
+            .imagem-block-0 {
                 height: 100%;
                 transition: 0.25s;
             }
 
-            figcaption {
+            .descricao-block-0 {
                 position: absolute;
-                bottom: -87%;
+                bottom: -78%; //ALTURA DO BLOCO DE TEXTO
                 left: 0;
                 width: 100%;
                 margin: 0;
@@ -89,14 +91,95 @@
                 line-height: 1;
                 transition: 0.25s;
 
-                h3 {
+                .mais-info-block-0 {
                     margin: 0 0 15px;
                     padding: 0;
                 }
 
-                p {
+                .paragrafo-block-0 {
                     font-size: 14px;
-                    line-height: 1.75;
+                    line-height: 1.55;
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+        /* CARD 2 */
+        .image-block-1 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 360px;
+            min-width: 360px;
+            height: 667px;
+            border-radius: 10px;
+            box-shadow:
+                0 1px 3px rgba(0, 0, 0, 0.12),
+                0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            overflow: hidden;
+
+            &:hover {
+                box-shadow:
+                    0 14px 28px rgba(0, 0, 0, 0.25),
+                    0 10px 10px rgba(0, 0, 0, 0.22);
+
+                .titulo-block-1 {
+                    opacity: 0;
+                    transform: scale(0.7);
+                }
+
+                .imagem-block-1 {
+                    transform: scale(1.25);
+                }
+
+                .descricao-block-1 {
+                    bottom: 0;
+                }
+            }
+
+            .titulo-block-1 {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                margin: 0;
+                padding: 0;
+                color: white;
+                font-size: 60px;
+                font-weight: 100;
+                line-height: 1;
+                opacity: 1;
+                transform: scale(1);
+                transition: 0.25s ease;
+                z-index: 3;
+            }
+
+            .imagem-block-1 {
+                height: 100%;
+                transition: 0.25s;
+            }
+
+            .descricao-block-1 {
+                position: absolute;
+                bottom: -90%; //ALTURA DO BLOCO DE TEXTO
+                left: 0;
+                width: 100%;
+                margin: 0;
+                padding: 20px;
+                background-color: rgba(black, 0.85);
+                box-shadow: 0 0 20px rgba(black, 0.4);
+                color: white;
+                line-height: 1;
+                transition: 0.25s;
+
+                .mais-info-block-1 {
+                    margin: 0 0 15px;
+                    padding: 0;
+                }
+
+                .paragrafo-block-1 {
+                    font-size: 14px;
+                    line-height: 1.55;
                     padding-bottom: 0.5rem;
                 }
             }

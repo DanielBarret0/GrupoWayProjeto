@@ -1,7 +1,5 @@
 @charset "UTF-8";
 @import '//assets/styles/components/botao';
-@import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -1199,6 +1197,11 @@ body.rolado .voltar-ao-topo {
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 20px;
+  transition: 200ms;
+}
+.botao-1:hover {
+  box-shadow: 5px 5px 0px 0px #6ad579;
+  transform: scale(1.05);
 }
 
 .metodos {
@@ -1437,10 +1440,22 @@ body.rolado .voltar-ao-topo {
     width: 700px;
   }
 }
-.sua-empresa .sua-empresa-texto {
+.sua-empresa .sua-empresa-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #51ba5a;
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+.sua-empresa .sua-empresa-textos p {
   text-align: center;
   font-size: 16px;
-  padding: 1rem;
+  font-style: italic;
+  color: white;
+  font-weight: 600;
 }
 .sua-empresa .box-card {
   display: flex;
@@ -1451,8 +1466,8 @@ body.rolado .voltar-ao-topo {
 }
 
 @media (min-width: 768px) {
-  .sua-empresa .sua-empresa-texto {
-    padding: 2rem 5rem;
+  .sua-empresa .sua-empresa-textos {
+    padding: 1rem 5rem;
   }
   .sua-empresa .box-card {
     padding: 1rem 4rem;
@@ -1461,8 +1476,8 @@ body.rolado .voltar-ao-topo {
   }
 }
 @media (min-width: 1024px) {
-  .sua-empresa .sua-empresa-texto {
-    padding: 2rem 12rem;
+  .sua-empresa .sua-empresa-textos {
+    padding: 1rem 12rem;
   }
   .sua-empresa .box-card {
     padding: 1rem 12rem;
@@ -1471,8 +1486,8 @@ body.rolado .voltar-ao-topo {
   }
 }
 @media (min-width: 1440px) {
-  .sua-empresa .sua-empresa-texto {
-    padding: 2rem 20rem;
+  .sua-empresa .sua-empresa-textos {
+    padding: 1rem 20rem;
   }
   .sua-empresa .box-card {
     padding: 1rem 20rem;
@@ -1481,8 +1496,8 @@ body.rolado .voltar-ao-topo {
   }
 }
 @media (min-width: 2000px) {
-  .sua-empresa .sua-empresa-texto {
-    padding: 2rem 55rem;
+  .sua-empresa .sua-empresa-textos {
+    padding: 1rem 55rem;
   }
 }
 .box-info {
@@ -1502,6 +1517,7 @@ body.rolado .voltar-ao-topo {
 .box-info .box-info-texto h2 {
   color: #51ba5a;
   font-size: 24px;
+  padding: 1rem 0;
 }
 .box-info .box-info-texto p {
   font-size: 16px;
@@ -1588,12 +1604,12 @@ ol li .icon {
 }
 
 ol li .title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 ol li .descr {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -1650,8 +1666,10 @@ ol li .descr {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  /* CARD 1 */
+  /* CARD 2 */
 }
-.sobre-nos .sobre-nos_cards figure {
+.sobre-nos .sobre-nos_cards .image-block-0 {
   position: relative;
   display: flex;
   align-items: center;
@@ -1664,20 +1682,20 @@ ol li .descr {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
 }
-.sobre-nos .sobre-nos_cards figure:hover {
+.sobre-nos .sobre-nos_cards .image-block-0:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.sobre-nos .sobre-nos_cards figure:hover h2 {
+.sobre-nos .sobre-nos_cards .image-block-0:hover .titulo-block-0 {
   opacity: 0;
   transform: scale(0.7);
 }
-.sobre-nos .sobre-nos_cards figure:hover img {
+.sobre-nos .sobre-nos_cards .image-block-0:hover .imagem-block-0 {
   transform: scale(1.25);
 }
-.sobre-nos .sobre-nos_cards figure:hover figcaption {
+.sobre-nos .sobre-nos_cards .image-block-0:hover .descricao-block-0 {
   bottom: 0;
 }
-.sobre-nos .sobre-nos_cards figure h2 {
+.sobre-nos .sobre-nos_cards .image-block-0 .titulo-block-0 {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -1692,13 +1710,13 @@ ol li .descr {
   transition: 0.25s ease;
   z-index: 3;
 }
-.sobre-nos .sobre-nos_cards figure img {
+.sobre-nos .sobre-nos_cards .image-block-0 .imagem-block-0 {
   height: 100%;
   transition: 0.25s;
 }
-.sobre-nos .sobre-nos_cards figure figcaption {
+.sobre-nos .sobre-nos_cards .image-block-0 .descricao-block-0 {
   position: absolute;
-  bottom: -87%;
+  bottom: -78%;
   left: 0;
   width: 100%;
   margin: 0;
@@ -1709,13 +1727,80 @@ ol li .descr {
   line-height: 1;
   transition: 0.25s;
 }
-.sobre-nos .sobre-nos_cards figure figcaption h3 {
+.sobre-nos .sobre-nos_cards .image-block-0 .descricao-block-0 .mais-info-block-0 {
   margin: 0 0 15px;
   padding: 0;
 }
-.sobre-nos .sobre-nos_cards figure figcaption p {
+.sobre-nos .sobre-nos_cards .image-block-0 .descricao-block-0 .paragrafo-block-0 {
   font-size: 14px;
-  line-height: 1.75;
+  line-height: 1.55;
+  padding-bottom: 0.5rem;
+}
+.sobre-nos .sobre-nos_cards .image-block-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  min-width: 360px;
+  height: 667px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+.sobre-nos .sobre-nos_cards .image-block-1:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.sobre-nos .sobre-nos_cards .image-block-1:hover .titulo-block-1 {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.sobre-nos .sobre-nos_cards .image-block-1:hover .imagem-block-1 {
+  transform: scale(1.25);
+}
+.sobre-nos .sobre-nos_cards .image-block-1:hover .descricao-block-1 {
+  bottom: 0;
+}
+.sobre-nos .sobre-nos_cards .image-block-1 .titulo-block-1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 1;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.25s ease;
+  z-index: 3;
+}
+.sobre-nos .sobre-nos_cards .image-block-1 .imagem-block-1 {
+  height: 100%;
+  transition: 0.25s;
+}
+.sobre-nos .sobre-nos_cards .image-block-1 .descricao-block-1 {
+  position: absolute;
+  bottom: -90%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+.sobre-nos .sobre-nos_cards .image-block-1 .descricao-block-1 .mais-info-block-1 {
+  margin: 0 0 15px;
+  padding: 0;
+}
+.sobre-nos .sobre-nos_cards .image-block-1 .descricao-block-1 .paragrafo-block-1 {
+  font-size: 14px;
+  line-height: 1.55;
   padding-bottom: 0.5rem;
 }
 .sobre-nos .sobre-nos_cards .redes-socias {
@@ -1803,6 +1888,7 @@ ol li .descr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 }
 .rodape-finance .redes .titulo h3 {
   font-size: 1.2rem;
@@ -1837,6 +1923,7 @@ ol li .descr {
   }
   .rodape-finance .redes {
     order: 3;
+    padding-top: 0;
   }
   .rodape-finance .container {
     justify-content: space-evenly;

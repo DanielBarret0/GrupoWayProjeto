@@ -1,8 +1,21 @@
 .sua-empresa {
-    .sua-empresa-texto {
-        text-align: center;
-        font-size: $texto;
-        padding: 1rem;
+
+    .sua-empresa-textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: $verde;
+        padding: 2rem 1rem;
+        margin: 2rem 0;
+        p {
+            text-align: center;
+            font-size: $texto;
+            font-style: italic;
+            color: white;
+            font-weight: 600;
+        }
     }
 
     .box-card {
@@ -16,9 +29,10 @@
 
 @media (min-width: 768px) {
     .sua-empresa {
-        .sua-empresa-texto {
-            padding: 2rem 5rem;
+        .sua-empresa-textos {
+            padding: 1rem 5rem;
         }
+
         .box-card {
             padding: 1rem 4rem;
             flex-direction: row;
@@ -29,9 +43,10 @@
 
 @media (min-width: 1024px) {
     .sua-empresa {
-        .sua-empresa-texto {
-            padding: 2rem 12rem;
+        .sua-empresa-textos {
+            padding: 1rem 12rem;
         }
+
         .box-card {
             padding: 1rem 12rem;
             flex-direction: row;
@@ -42,9 +57,10 @@
 
 @media (min-width: 1440px) {
     .sua-empresa {
-        .sua-empresa-texto {
-            padding: 2rem 20rem;
+        .sua-empresa-textos {
+            padding: 1rem 20rem;
         }
+
         .box-card {
             padding: 1rem 20rem;
             flex-direction: row;
@@ -55,8 +71,8 @@
 
 @media (min-width: 2000px) {
     .sua-empresa {
-        .sua-empresa-texto {
-            padding: 2rem 55rem;
+        .sua-empresa-textos {
+            padding: 1rem 55rem;
         }
     }
 }
