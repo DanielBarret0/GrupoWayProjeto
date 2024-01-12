@@ -85,7 +85,7 @@
                 width: 100%;
                 margin: 0;
                 padding: 20px;
-                background-color: rgba(black, 0.85);
+                background-color: $verde; //cor de fundo dos textos
                 box-shadow: 0 0 20px rgba(black, 0.4);
                 color: white;
                 line-height: 1;
@@ -166,7 +166,7 @@
                 width: 100%;
                 margin: 0;
                 padding: 20px;
-                background-color: rgba(black, 0.85);
+                background-color: $verde; //cor de fundo dos textos
                 box-shadow: 0 0 20px rgba(black, 0.4);
                 color: white;
                 line-height: 1;
@@ -202,12 +202,13 @@
                     i {
                         color: white;
                         font-size: 1.5rem;
-                        padding: 0.2rem;
+                        padding: 0.1rem 0.2rem;
                         transition: 200ms;
                         cursor: pointer;
 
                         &:hover {
                             color: $verde;
+                            background: white;
                             border-radius: 10px;
                         }
                     }
@@ -227,6 +228,9 @@
 
 @media (min-width: 1440px) {
     .sobre-nos {
+        h2 {
+            font-size: $titulo-desktop;
+        }
         .sobre-nos_cards {
             figure {
                 width: 400px;

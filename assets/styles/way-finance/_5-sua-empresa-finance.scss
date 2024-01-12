@@ -45,6 +45,9 @@
     .sua-empresa {
         .sua-empresa-textos {
             padding: 1rem 12rem;
+            p {
+                font-size: $texto-tablet;
+            }
         }
 
         .box-card {
@@ -58,7 +61,10 @@
 @media (min-width: 1440px) {
     .sua-empresa {
         .sua-empresa-textos {
-            padding: 1rem 20rem;
+            padding: 5rem 20rem;
+            p {
+                font-size: $texto-desktop;
+            }
         }
 
         .box-card {

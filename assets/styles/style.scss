@@ -10,10 +10,11 @@
 // ...
 
 // Layouts
-@import '../styles/layouts//efeitos';
+
 // ...
 
 // Page index
+@import '../styles/index/efeitos';
 @import '../styles/index/nav';
 @import '../styles/index/banner-entrada';
 @import '../styles/index/grupos';
@@ -23,6 +24,7 @@
 
 // Way Finance
 
+@import '../styles/way-finance/0-efeitos-finance';
 @import '../styles/way-finance/1-nav-finance';
 @import '../styles/way-finance/2-banner-entrada-finance';
 @import '../styles/way-finance/3-metodo-finance';

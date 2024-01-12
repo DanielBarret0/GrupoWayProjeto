@@ -169,6 +169,13 @@
     .metodos {
         .textos {
             padding: 0 10rem;
+            h2 {
+                font-size: $titulo-tablet;
+            }
+    
+            p {
+                font-size: $texto-tablet;
+            }
         }
 
         .box-container {
@@ -197,6 +204,13 @@
     .metodos {
         .textos {
             padding: 0 20rem;
+            h2 {
+                font-size: $titulo-desktop;
+            }
+    
+            p {
+                font-size: $texto-desktop;
+            }
         }
 
         .box-container {

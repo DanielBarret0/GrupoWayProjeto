@@ -1,11 +1,11 @@
 /* EFEITO SUBLINHADO ANIMADO */
-#pagina-2 {
+.highligth-way {
     position: relative;
     display: inline-block;
     z-index: -1;
 }
 
-#pagina-2 ::before {
+.highligth-way::before {
     content: "";
     position: absolute;
     top: 0;
@@ -24,6 +24,6 @@
     border-radius: 5px;
 }
 
-#pagina-2 .active::before {
+.highligth-way.active::before {
     width: 100%;
 }

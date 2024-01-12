@@ -84,6 +84,9 @@
             p {
                 font-size: $texto-tablet;
             }
+            .texto-paragrafo {
+                font-size: $texto-tablet;
+            }
         }
 
         .iframe-finance {
@@ -115,6 +118,9 @@
             p {
                 font-size: $texto-tablet;
             }
+            .texto-paragrafo {
+                font-size: $texto-tablet;
+            }
         }
     }
 }
@@ -143,14 +149,17 @@
             p {
                 font-size: $texto-desktop;
             }
+
+            .texto-paragrafo {
+                font-size: $texto-desktop;
+            }
         }
 
         .iframe-finance {
             margin-top: 0;
-            width: 120%;
+            width: 175%;
             height: 60%;
         }
-
     }
 }
 
@@ -172,11 +181,15 @@
             p {
                 font-size: $texto-desktop;
             }
+
+            .texto-paragrafo {
+                font-size: $texto-desktop;
+            }
         }
 
         .iframe-finance {
             margin-top: 0;
-            width: 100%;
+            width: 145%;
             height: 40%;
         }
     }

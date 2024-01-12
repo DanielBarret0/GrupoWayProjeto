@@ -1,0 +1,138 @@
+@import '../abstract/variaveis';
+
+/* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
+
+.text-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-text {
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.border-effect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    //background-color: $laranja;
+    background: rgb(81, 186, 90);
+    background: $gradiente-verde;
+    transition: width 0.3s;
+}
+
+.text-container:hover .hover-text {
+    color: white;
+}
+
+.text-container:hover .border-effect {
+    width: 100%;
+}
+/* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
+
+/* EFEITO SUBLINHADO ANIMADO */
+.highlight {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sem largura */
+    height: 100%;
+    background: $gradiente-verde;
+    /* Cor de fundo da marcação */
+    mix-blend-mode: multiply;
+    /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+    z-index: -1;
+    /* Coloca o pseudo-elemento abaixo do texto */
+    transition: width 2s ease-out;
+    /* Adiciona uma transição para suavizar a animação */
+    border-radius: 5px;
+}
+
+.highlight.active::before {
+    width: 100%;
+}
+
+/* EFEITO SUBLINHADO ANIMADO */
+
+/* EFEITO SCROLL BAR */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #F2FDFF;
+}
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #ffffff63;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #b8c0c200;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #b8c0c200;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: $gradiente-verde;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: $verde-claro;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: $verde-escuro;
+}
+
+
+/* Botao voltar ao topo */
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+}
+
+.voltar-ao-topo a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: $gradiente-azul;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    transition: 300ms;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+body.rolado .voltar-ao-topo {
+    display: block;
+}

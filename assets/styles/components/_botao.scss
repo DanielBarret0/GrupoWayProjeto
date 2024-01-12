@@ -53,3 +53,10 @@
         transform: scale(1.05);
     }
 }
+
+@media (min-width: 1440px) {
+    .botao-1 {
+        padding: 3rem 2rem;
+        font-size: $texto-desktop;
+    }
+}

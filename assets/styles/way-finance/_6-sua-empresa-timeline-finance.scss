@@ -16,9 +16,6 @@
             font-size: $titulo;
             padding: 1rem 0;
         }
-        p {
-            font-size: $texto;
-        }
     }
 }
 
@@ -130,18 +127,23 @@ ol li .descr {
             padding: 2rem 8rem;
             text-align: center;
             h2 {
-                color: $verde;
                 font-size: $titulo;
-            }
-            p {
-                font-size: $texto;
             }
         }
     }
 }
 
 @media (min-width: 1440px) {
+    .box-info {
+        .box-info-texto {
+            h2 {
+                font-size: $titulo-desktop;
+                padding: 1rem 5rem;
+            }
+        }
+    }
     ol {
+        width: min(70rem, 90%);
         padding: 0 5rem;
     }
 }

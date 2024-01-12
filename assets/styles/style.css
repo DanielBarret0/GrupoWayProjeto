@@ -843,6 +843,36 @@ body.rolado .voltar-ao-topo {
     font-size: 2rem;
   }
 }
+/* EFEITO SUBLINHADO ANIMADO */
+.highligth-way {
+  position: relative;
+  display: inline-block;
+  z-index: -1;
+}
+
+.highligth-way::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  /* Inicialmente sem largura */
+  height: 100%;
+  background: #51ba5a;
+  /* Cor de fundo da marcação */
+  mix-blend-mode: multiply;
+  /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+  z-index: -1;
+  /* Coloca o pseudo-elemento abaixo do texto */
+  transition: width 2s ease-out;
+  /* Adiciona uma transição para suavizar a animação */
+  border-radius: 5px;
+}
+
+.highligth-way.active::before {
+  width: 100%;
+}
+
 .top-nav-finance {
   display: flex;
   flex-direction: row;
@@ -1079,6 +1109,9 @@ body.rolado .voltar-ao-topo {
   .banner-entrada-finance .textos p {
     font-size: 20px;
   }
+  .banner-entrada-finance .textos .texto-paragrafo {
+    font-size: 20px;
+  }
   .banner-entrada-finance .iframe-finance {
     margin-top: 0;
     width: 70%;
@@ -1105,6 +1138,9 @@ body.rolado .voltar-ao-topo {
   .banner-entrada-finance .textos p {
     font-size: 20px;
   }
+  .banner-entrada-finance .textos .texto-paragrafo {
+    font-size: 20px;
+  }
 }
 @media (min-width: 1440px) {
   .banner-entrada-finance {
@@ -1124,9 +1160,12 @@ body.rolado .voltar-ao-topo {
   .banner-entrada-finance .textos p {
     font-size: 24px;
   }
+  .banner-entrada-finance .textos .texto-paragrafo {
+    font-size: 24px;
+  }
   .banner-entrada-finance .iframe-finance {
     margin-top: 0;
-    width: 120%;
+    width: 175%;
     height: 60%;
   }
 }
@@ -1147,9 +1186,12 @@ body.rolado .voltar-ao-topo {
   .banner-entrada-finance .textos p {
     font-size: 24px;
   }
+  .banner-entrada-finance .textos .texto-paragrafo {
+    font-size: 24px;
+  }
   .banner-entrada-finance .iframe-finance {
     margin-top: 0;
-    width: 100%;
+    width: 145%;
     height: 40%;
   }
 }
@@ -1204,6 +1246,12 @@ body.rolado .voltar-ao-topo {
   transform: scale(1.05);
 }
 
+@media (min-width: 1440px) {
+  .botao-1 {
+    padding: 3rem 2rem;
+    font-size: 24px;
+  }
+}
 .metodos {
   padding: 1rem;
 }
@@ -1327,6 +1375,12 @@ body.rolado .voltar-ao-topo {
   .metodos .textos {
     padding: 0 10rem;
   }
+  .metodos .textos h2 {
+    font-size: 30px;
+  }
+  .metodos .textos p {
+    font-size: 20px;
+  }
   .metodos .box-container .box-item {
     width: 400px;
   }
@@ -1342,6 +1396,12 @@ body.rolado .voltar-ao-topo {
 @media screen and (min-width: 1440px) {
   .metodos .textos {
     padding: 0 20rem;
+  }
+  .metodos .textos h2 {
+    font-size: 42px;
+  }
+  .metodos .textos p {
+    font-size: 24px;
   }
   .metodos .box-container .box-item {
     width: 300px;
@@ -1479,6 +1539,9 @@ body.rolado .voltar-ao-topo {
   .sua-empresa .sua-empresa-textos {
     padding: 1rem 12rem;
   }
+  .sua-empresa .sua-empresa-textos p {
+    font-size: 20px;
+  }
   .sua-empresa .box-card {
     padding: 1rem 12rem;
     flex-direction: row;
@@ -1487,7 +1550,10 @@ body.rolado .voltar-ao-topo {
 }
 @media (min-width: 1440px) {
   .sua-empresa .sua-empresa-textos {
-    padding: 1rem 20rem;
+    padding: 5rem 20rem;
+  }
+  .sua-empresa .sua-empresa-textos p {
+    font-size: 24px;
   }
   .sua-empresa .box-card {
     padding: 1rem 20rem;
@@ -1518,9 +1584,6 @@ body.rolado .voltar-ao-topo {
   color: #51ba5a;
   font-size: 24px;
   padding: 1rem 0;
-}
-.box-info .box-info-texto p {
-  font-size: 16px;
 }
 
 ol {
@@ -1628,15 +1691,16 @@ ol li .descr {
     text-align: center;
   }
   .box-info .box-info-texto h2 {
-    color: #51ba5a;
     font-size: 24px;
-  }
-  .box-info .box-info-texto p {
-    font-size: 16px;
   }
 }
 @media (min-width: 1440px) {
+  .box-info .box-info-texto h2 {
+    font-size: 42px;
+    padding: 1rem 5rem;
+  }
   ol {
+    width: min(70rem, 90%);
     padding: 0 5rem;
   }
 }
@@ -1721,7 +1785,7 @@ ol li .descr {
   width: 100%;
   margin: 0;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #51ba5a;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   color: white;
   line-height: 1;
@@ -1788,7 +1852,7 @@ ol li .descr {
   width: 100%;
   margin: 0;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #51ba5a;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   color: white;
   line-height: 1;
@@ -1819,12 +1883,13 @@ ol li .descr {
 .sobre-nos .sobre-nos_cards .redes-socias .redes a i {
   color: white;
   font-size: 1.5rem;
-  padding: 0.2rem;
+  padding: 0.1rem 0.2rem;
   transition: 200ms;
   cursor: pointer;
 }
 .sobre-nos .sobre-nos_cards .redes-socias .redes a i:hover {
   color: #51ba5a;
+  background: white;
   border-radius: 10px;
 }
 
@@ -1834,6 +1899,9 @@ ol li .descr {
   }
 }
 @media (min-width: 1440px) {
+  .sobre-nos h2 {
+    font-size: 42px;
+  }
   .sobre-nos .sobre-nos_cards figure {
     width: 400px;
     min-width: 360px;
