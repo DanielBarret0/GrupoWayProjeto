@@ -52,7 +52,7 @@
         }
 
         .texto-paragrafo {
-            font-size: 1rem;
+            font-size: $texto;
         }
 
     }
@@ -87,6 +87,10 @@
             }
 
             p {
+                font-size: $texto-tablet;
+            }
+
+            .texto-paragrafo {
                 font-size: $texto-tablet;
             }
         }
@@ -147,6 +151,10 @@
             p {
                 font-size: $texto-desktop;
             }
+
+            .texto-paragrafo {
+                font-size: $texto-desktop;
+            }
         }
 
         iframe {
@@ -164,18 +172,6 @@
         .textos {
             padding: 0;
             margin: 0;
-
-            h1 {
-                font-size: $titulo-desktop;
-
-                .highlight {
-                    font-size: $titulo-desktop;
-                }
-            }
-
-            p {
-                font-size: $texto-desktop;
-            }
         }
 
         iframe {
