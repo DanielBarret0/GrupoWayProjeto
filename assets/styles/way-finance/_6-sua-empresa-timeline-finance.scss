@@ -1,4 +1,3 @@
-
 .box-info {
     --color: rgba(30, 30, 30);
     --bgColor: rgb(255, 255, 255);
@@ -9,8 +8,20 @@
     padding: 1rem;
     color: var(--color);
     background: var(--bgColor);
+
+    .tag {
+        text-transform: uppercase;
+        color: $verde;
+        text-align: center;
+        padding: 2rem 1rem 1rem 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
     .box-info-texto {
         text-align: center;
+
         h2 {
             color: $verde;
             font-size: $titulo;
@@ -126,6 +137,7 @@ ol li .descr {
         .box-info-texto {
             padding: 2rem 8rem;
             text-align: center;
+
             h2 {
                 font-size: $titulo;
             }
@@ -142,6 +154,7 @@ ol li .descr {
             }
         }
     }
+
     ol {
         width: min(70rem, 90%);
         padding: 0 5rem;

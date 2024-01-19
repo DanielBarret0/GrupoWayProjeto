@@ -1257,6 +1257,14 @@ body.rolado .voltar-ao-topo {
 .metodos {
   padding: 1rem;
 }
+.metodos .tag {
+  text-align: center;
+  padding: 0rem 1rem 2.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #51ba5a;
+}
 .metodos .textos h2 {
   text-align: center;
   font-size: 24px;
@@ -1578,6 +1586,15 @@ body.rolado .voltar-ao-topo {
   padding: 1rem;
   color: var(--color);
   background: var(--bgColor);
+}
+.box-info .tag {
+  text-transform: uppercase;
+  color: #51ba5a;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
 }
 .box-info .box-info-texto {
   text-align: center;
