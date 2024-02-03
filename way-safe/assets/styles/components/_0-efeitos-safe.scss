@@ -1,0 +1,99 @@
+@import '../../../../assets/styles/abstract/variaveis';
+
+/* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
+.text-container-safe {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-text-safe {
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.border-effect-safe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $cor-semelhante-2-safe;
+    transition: width 0.3s;
+}
+
+.text-container-safe:hover .hover-text-safe {
+    color: white;
+}
+
+.text-container-safe:hover .border-effect-safe {
+    width: 100%;
+}
+/* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
+
+
+
+/* EFEITO SUBLINHADO ANIMADO */
+.highligth-safe {
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+
+.highligth-safe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    /* Inicialmente sem largura */
+    height: 100%;
+    background: $cor-principal-safe;
+    /* Cor de fundo da marcação */
+    mix-blend-mode: multiply;
+    /* Define o modo de mistura para que a cor de fundo não cubra o texto */
+    z-index: -1;
+    /* Coloca o pseudo-elemento abaixo do texto */
+    transition: width 2s ease-out;
+    /* Adiciona uma transição para suavizar a animação */
+    border-radius: 5px;
+}
+
+.highligth-safe.active::before {
+    width: 100%;
+}
+/* EFEITO SUBLINHADO ANIMADO */
+
+
+
+/* Botao voltar ao topo */
+.voltar-ao-topo-safe {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+}
+
+.voltar-ao-topo-safe a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: $cor-semelhante-2-safe;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    transition: 300ms;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+body.rolado-safe .voltar-ao-topo-safe {
+    display: block;
+}
+/* Botao voltar ao topo */
