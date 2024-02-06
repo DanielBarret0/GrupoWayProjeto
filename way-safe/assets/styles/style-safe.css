@@ -977,13 +977,13 @@ body.rolado-safe .voltar-ao-topo-safe {
 }
 .nossa-equipe .image-block-safe .titulo-block-safe {
   position: absolute;
-  top: 20px;
+  top: 460px;
   left: 20px;
   margin: 0;
   padding: 0;
-  color: white;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
   font-size: 60px;
-  font-weight: 100;
   line-height: 1;
   opacity: 1;
   transform: scale(1);
@@ -996,7 +996,7 @@ body.rolado-safe .voltar-ao-topo-safe {
 }
 .nossa-equipe .image-block-safe .descricao-block-safe {
   position: absolute;
-  bottom: -48%;
+  bottom: -55%;
   left: 0;
   width: 100%;
   margin: 0;
