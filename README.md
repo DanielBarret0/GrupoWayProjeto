@@ -1,1 +1,1 @@
-# wayfinance
+# Projeto Grupo Way
