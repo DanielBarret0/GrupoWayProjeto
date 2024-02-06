@@ -1,0 +1,67 @@
+@import '../../../../assets/styles/abstract/variaveis';
+
+.futuro {
+    background-image: url(../img/background-1.png);
+    background-position: center left -280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: white;
+
+    h2 {
+        font-size: $titulo;
+    }
+
+    p {
+        font-size: $texto;
+        font-weight: 500;
+    }
+
+    .futuro__texto-destaque {
+        font-size: $texto;
+        font-weight: 700;
+    }
+
+
+    .container__futuro-botao-safe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+
+        .futuro__botao-safe {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            color: white;
+            width: 250px;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 2px solid white;
+            border-radius: 20px;
+            transition: 200ms;
+
+            &:hover {
+                box-shadow: 5px 5px 0px 0px white;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .futuro {
+        background-position: center;
+        p {
+            padding: 0 19rem;
+        }
+    }
+}

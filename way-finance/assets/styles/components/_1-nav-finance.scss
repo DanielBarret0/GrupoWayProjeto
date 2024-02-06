@@ -1,12 +1,12 @@
 @import '../../../../assets/styles/abstract/variaveis';
 
-.top-nav-safe {
+.top-nav-finance {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    background: $cor-principal-safe;
+    background: $verde;
     color: #FFF;
     height: 50px;
     padding: 0.5rem;
@@ -128,7 +128,7 @@
     }
 
     #menu-toggle:checked~.menu li {
-        border: 1px solid $cor-semelhante-1-safe;
+        border: 1px solid $verde-claro;
         height: 3.5em;
         padding: 1em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -140,10 +140,10 @@
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        background: $cor-principal-safe;
+        background: $verde;
         
         &:hover {
-            background: $cor-principal-safe;
+            background: $verde;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
@@ -157,7 +157,7 @@
 }
 
 @media (min-width: 700px) {
-    .top-nav-safe {
+    .top-nav-finance {
         padding: 2rem 1.5rem;
         background: rgba(85, 105, 87, 0);
     }
@@ -168,7 +168,7 @@
 }
 
 @media (min-width: 1440px) {
-    .top-nav-safe {
+    .top-nav-finance {
         padding: 1.5rem 10rem;
     }
 
@@ -182,7 +182,7 @@
 }
 
 @media (min-width: 2000px) {
-    .top-nav-safe {
+    .top-nav-finance {
         padding: 2rem 35rem;
     }
 

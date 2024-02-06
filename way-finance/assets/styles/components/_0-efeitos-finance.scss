@@ -1,46 +1,45 @@
+
 @import '../../../../assets/styles/abstract/variaveis';
 
 /* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
-.text-container-safe {
+.text-container-finance {
     position: relative;
     overflow: hidden;
 }
 
-.hover-text-safe {
+.hover-text-finance {
     margin: 0;
     cursor: pointer;
     transition: color 0.3s;
 }
 
-.border-effect-safe {
+.border-effect-finance {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
-    background: $cor-semelhante-2-safe;
+    background: $cor-semelhante-2-finance;
     transition: width 0.3s;
 }
 
-.text-container-safe:hover .hover-text-safe {
+.text-container-finance:hover .hover-text-finance {
     color: white;
 }
 
-.text-container-safe:hover .border-effect-safe {
+.text-container-finance:hover .border-effect-finance {
     width: 100%;
 }
 /* EFEITO HOVER NO TEXTO COM LINHA ABAIXO ANIMADA */
 
-
-
 /* EFEITO SUBLINHADO ANIMADO */
-.highligth-safe {
+.highligth-finance {
     position: relative;
     display: inline-block;
     z-index: -1;
 }
 
-.highligth-safe::before {
+.highligth-finance::before {
     content: "";
     position: absolute;
     top: 0;
@@ -48,7 +47,7 @@
     width: 0;
     /* Inicialmente sem largura */
     height: 100%;
-    background: $cor-principal-safe;
+    background: $verde;
     /* Cor de fundo da marcação */
     mix-blend-mode: multiply;
     /* Define o modo de mistura para que a cor de fundo não cubra o texto */
@@ -59,15 +58,15 @@
     border-radius: 5px;
 }
 
-.highligth-safe.active::before {
+.highligth-finance.active::before {
     width: 100%;
 }
+
 /* EFEITO SUBLINHADO ANIMADO */
 
 
-
 /* Botao voltar ao topo */
-.voltar-ao-topo-safe {
+.voltar-ao-topo-finance {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -75,11 +74,11 @@
 
 }
 
-.voltar-ao-topo-safe a {
+.voltar-ao-topo-finance a {
     display: block;
     width: 40px;
     height: 40px;
-    background: $cor-semelhante-2-safe;
+    background: $cor-semelhante-1-finance;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -93,9 +92,7 @@
     }
 }
 
-body.rolado-safe .voltar-ao-topo-safe {
+body.rolado-finance .voltar-ao-topo-finance {
     display: block;
 }
 /* Botao voltar ao topo */
-
-

@@ -1,7 +1,7 @@
 @import '../../../../assets/styles/abstract/variaveis';
 
-.rodape-safe {
-    background-color: $cor-principal-safe;
+.rodape-finance {
+    background-color: $verde;
     color: white;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@
 
                     &:hover {
                         background-color: white;
-                        color: $cor-semelhante-2-safe;
+                        color: $cor-semelhante-2-finance;
                         border-radius: 10px;
                     }
                 }
@@ -86,7 +86,7 @@
 }
 
 @media (min-width: 700px) {
-        .rodape-safe {
+        .rodape-finance {
         flex-direction: row;
         padding: 2rem;
 
@@ -116,7 +116,7 @@
 }
 
 @media (min-width: 1024px) {
-    .rodape-safe {
+    .rodape-finance {
 
         .redes {
             img {
@@ -127,7 +127,7 @@
 }
 
 @media (min-width: 1440px) {
-    .rodape-safe {
+    .rodape-finance {
         padding: 2rem 20rem;
 
         .redes {
@@ -146,7 +146,7 @@
 
 
 @media (min-width: 2000px) {
-    .rodape-safe {
+    .rodape-finance {
         padding: 2rem 30rem;
 
         .redes {

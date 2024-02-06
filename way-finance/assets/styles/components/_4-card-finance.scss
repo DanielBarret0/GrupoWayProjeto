@@ -1,0 +1,111 @@
+@import '../../../../assets/styles/abstract/variaveis';
+.card-finance-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $verde;
+    padding: 2rem 1rem;
+
+    img {
+        width: 360px;
+    }
+
+    .textos__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: white;
+
+        h3 {
+            text-align: center;
+            font-size: $titulo;
+        }
+
+        p {
+            font-size: $texto;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .card-finance-page {
+        img {
+            width: 380px;
+        }
+
+        .textos__card {
+
+            h3 {
+                text-align: center;
+                font-size: $titulo-tablet;
+            }
+
+            p {
+                text-align: center;
+                font-size: $texto-tablet;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .card-finance-page {
+        padding: 2rem 6rem;
+
+        img {
+            width: 380px;
+        }
+
+        .textos__card {
+
+            h3 {
+                text-align: center;
+                font-size: $titulo-tablet;
+            }
+
+            p {
+                text-align: center;
+                font-size: $texto-tablet;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-finance-page {
+        flex-direction: row;
+        padding: 2rem 6rem;
+        gap: 1rem;
+
+        img {
+            width: 380px;
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .card-finance-page {
+        flex-direction: row;
+        padding: 2rem 12rem;
+
+        img {
+            width: 500px;
+        }
+    }
+}
+
+@media (min-width: 2000px) {
+    .card-finance-page {
+        flex-direction: row;
+        padding: 2rem 35rem;
+
+        img {
+            width: 700px;
+        }
+    }
+}
