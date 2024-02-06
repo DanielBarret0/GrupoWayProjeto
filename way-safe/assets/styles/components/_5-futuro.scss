@@ -57,11 +57,40 @@
     }
 }
 
+@media (min-width: 768px) { 
+    .futuro {
+        padding: 1rem 9rem;
+    }
+}
+
 @media (min-width: 1366px) {
     .futuro {
         background-position: center;
         p {
             padding: 0 19rem;
+        }
+        .container__futuro-botao-safe {
+            .futuro__botao-safe {
+                width: 330px;
+                font-size: $texto-desktop;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .futuro {
+        h2 {
+            font-size: $titulo-desktop;
+        }
+    
+        p {
+            font-size: $texto-desktop;
+            font-weight: 500;
+        }
+
+        .futuro__texto-destaque {
+            font-size: $texto-desktop;
         }
     }
 }

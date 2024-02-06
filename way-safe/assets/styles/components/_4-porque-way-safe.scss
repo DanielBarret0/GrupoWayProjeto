@@ -10,7 +10,6 @@
 
     .titulo {
         text-align: center;
-
         h2 {
             padding: 2rem;
             color: $cor-principal-safe;
@@ -126,6 +125,11 @@
 
 @media (min-width: 768px) {
     .porque-way-safe {
+        .titulo {
+            h2 {
+                font-size: $titulo-tablet;
+            }
+        }
         .conteudo {
             flex-direction: row;
             gap: 0.8rem;
@@ -139,11 +143,34 @@
 
 @media (min-width: 1024px) {
     .porque-way-safe {
+        .titulo {
+            h2 {
+                font-size: $titulo-desktop;
+            }
+        }
         .conteudo {
             flex-direction: row;
             .e-card {
                 width: 340px;
                 height: 400px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .porque-way-safe {
+        padding-bottom: 5rem;
+        .titulo {
+            h2 {
+                padding-bottom: 5rem;
+            }
+        }
+        .conteudo {
+            .e-card {
+                width: 350px;
+                height: 500px;
+                
             }
         }
     }

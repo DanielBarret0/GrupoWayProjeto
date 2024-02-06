@@ -127,3 +127,19 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .nossa-equipe {
+        .titulo {
+            font-size: $titulo-tablet;
+        }
+    }
+}
+
+@media (min-width: 1366px) {
+    .nossa-equipe {
+        .titulo {
+            font-size: $titulo-desktop;
+        }
+    }
+}
