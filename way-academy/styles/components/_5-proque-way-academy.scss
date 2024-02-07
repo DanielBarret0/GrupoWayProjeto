@@ -1,0 +1,178 @@
+@import '../../../assets/styles/abstract/variaveis';
+
+.porque-way-academy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+
+    .titulo {
+        text-align: center;
+        padding: 0 1.2rem;
+        h2 {
+            padding: 2rem;
+            color: $cor-principal-academy;
+        }
+    }
+
+    .conteudo {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+
+        .e-card {
+            background: transparent;
+            box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+            position: relative;
+            width: 300px;
+            height: 400px;
+            border-radius: 16px;
+            overflow: hidden;
+
+            .wave {
+                position: absolute;
+                width: 540px;
+                height: 700px;
+                opacity: 0.6;
+                left: 0;
+                top: 0;
+                margin-left: -50%;
+                margin-top: -70%;
+                background: linear-gradient(744deg, $cor-principal-academy, $cor-semelhante-2-academy 10%, #471b9a);
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 20px;
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                color: rgb(255, 255, 255);
+                font-weight: 600;
+
+                .bi {
+                    font-size: 2rem;
+                }
+
+                .titulo {
+                    color: white;
+                }
+
+                .name {
+                    font-size: 16px;
+                    font-weight: 500;
+                    position: relative;
+                    top: 1em;
+                    padding: 1rem;
+                }
+            }
+
+            .wave:nth-child(2),
+            .wave:nth-child(3) {
+                top: 210px;
+            }
+
+            &.playing {
+                .wave {
+                    border-radius: 40%;
+                    animation: wave 15000ms infinite linear;
+                }
+
+                .wave:nth-child(2) {
+                    animation-duration: 15000ms;
+                }
+
+                .wave:nth-child(3) {
+                    animation-duration: 12000ms;
+                }
+            }
+
+            .wave {
+                border-radius: 40%;
+                animation: wave 55s infinite linear;
+
+                &:nth-child(2) {
+                    animation-duration: 50s;
+                }
+
+                &:nth-child(3) {
+                    animation-duration: 45s;
+                }
+            }
+        }
+
+        @keyframes wave {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .porque-way-academy {
+        .titulo {
+            h2 {
+                font-size: $titulo-tablet;
+            }
+        }
+        .conteudo {
+            flex-direction: row;
+            gap: 0.8rem;
+            .e-card {
+                width: 240px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .porque-way-academy {
+        .titulo {
+            h2 {
+                font-size: $titulo-desktop;
+            }
+        }
+        .conteudo {
+            flex-direction: row;
+            .e-card {
+                width: 340px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .porque-way-academy {
+        padding-bottom: 5rem;
+        .titulo {
+            h2 {
+                padding-bottom: 5rem;
+            }
+        }
+        .conteudo {
+            .e-card {
+                width: 350px;
+                height: 500px;
+                
+            }
+        }
+    }
+}

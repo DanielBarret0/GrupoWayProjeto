@@ -1,0 +1,96 @@
+@import '../../../assets/styles/abstract/variaveis';
+
+.futuro-academy {
+    background-image: url(../way-academy/img/background.jpg);
+    background-position: center left -280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: white;
+
+    h2 {
+        font-size: $titulo;
+    }
+
+    p {
+        font-size: $texto;
+        font-weight: 500;
+    }
+
+    .futuro__texto-destaque-academy {
+        font-size: $texto;
+        font-weight: 700;
+    }
+
+
+    .container__futuro-botao-academy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+
+        .futuro__botao-academy {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            color: white;
+            width: 250px;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 2px solid white;
+            border-radius: 20px;
+            transition: 200ms;
+
+            &:hover {
+                box-shadow: 5px 5px 0px 0px white;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .futuro-academy {
+        padding: 1rem 9rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .futuro-academy {
+        background-position: center;
+        p {
+            padding: 0 19rem;
+        }
+        .container__futuro-botao-academy {
+            .futuro__botao-academy {
+                width: 330px;
+                font-size: $texto-desktop;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .futuro-academy {
+        h2 {
+            font-size: $titulo-desktop;
+        }
+    
+        p {
+            font-size: $texto-desktop;
+            font-weight: 500;
+        }
+
+        .futuro__texto-destaque-academy {
+            font-size: $texto-desktop;
+        }
+    }
+}

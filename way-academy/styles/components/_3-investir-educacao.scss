@@ -1,0 +1,56 @@
+@import '../../../assets/styles/abstract/variaveis';
+
+.investir-educacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+    padding-bottom: 3rem;
+    h2 {
+        font-size: $titulo;
+        color: $cor-principal-academy;
+    }
+    p {
+        font-size: $texto;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 768px) {
+    .investir-educacao {
+        padding: 0 4rem;
+        padding-bottom: 3rem;
+        h2 {
+            font-size: $titulo-tablet;
+        }
+        p {
+            font-size: $texto-tablet;
+        }
+    }
+    
+}
+
+@media (min-width: 1366px) {
+    .investir-educacao {
+        padding: 0 12rem;
+        padding-bottom: 3rem;
+        h2 {
+            font-size: $titulo-desktop;
+        }
+        p {
+            font-size: $texto-desktop;
+        }
+    }
+    
+}
+
+@media (min-width: 1366px) {
+    .investir-educacao {
+        padding: 0 45rem;
+        padding-bottom: 3rem;
+    }
+    
+}
