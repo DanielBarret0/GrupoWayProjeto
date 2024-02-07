@@ -488,6 +488,7 @@ body.rolado-safe .voltar-ao-topo-safe {
   border-radius: 15px;
   border-top-right-radius: 0;
   padding: 1rem;
+  box-shadow: 5px 5px 24px -10px rgb(0, 0, 0);
 }
 .contaienr-cards-mobile ul li:nth-child(odd) {
   border-color: #3a9bb3;
@@ -559,6 +560,7 @@ body.rolado-safe .voltar-ao-topo-safe {
   display: block;
   position: relative;
   z-index: 1;
+  box-shadow: 5px 5px 24px -10px rgb(0, 0, 0);
 }
 .Yearly-timeline .timeline .timeline-content:before {
   content: "";
@@ -666,6 +668,7 @@ body.rolado-safe .voltar-ao-topo-safe {
   font-weight: 600;
   border-radius: 20px;
   transition: 200ms;
+  box-shadow: 5px 5px 24px -10px rgb(0, 0, 0);
 }
 .container-botao-cards .cards__botao-safe:hover {
   box-shadow: 5px 5px 0px 0px #46b3ca;
@@ -958,9 +961,9 @@ body.rolado-safe .voltar-ao-topo-safe {
   min-width: 360px;
   height: 667px;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
+  box-shadow: 5px 5px 24px -10px rgb(0, 0, 0);
 }
 .nossa-equipe .image-block-safe:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);

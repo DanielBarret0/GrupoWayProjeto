@@ -811,7 +811,7 @@ body.rolado-finance .voltar-ao-topo-finance {
 
 @media (min-width: 768px) {
   .sua-empresa .sua-empresa-textos {
-    padding: 1rem 5rem;
+    padding: 3rem 5rem;
   }
   .sua-empresa .box-card {
     padding: 1rem 4rem;
@@ -821,7 +821,7 @@ body.rolado-finance .voltar-ao-topo-finance {
 }
 @media (min-width: 1024px) {
   .sua-empresa .sua-empresa-textos {
-    padding: 1rem 12rem;
+    padding: 3rem 12rem;
   }
   .sua-empresa .sua-empresa-textos p {
     font-size: 20px;
@@ -847,7 +847,7 @@ body.rolado-finance .voltar-ao-topo-finance {
 }
 @media (min-width: 2000px) {
   .sua-empresa .sua-empresa-textos {
-    padding: 1rem 55rem;
+    padding: 4rem 55rem;
   }
 }
 .box-info {
@@ -1035,7 +1035,7 @@ ol li .descr {
   min-width: 360px;
   height: 667px;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 5px 5px 24px -10px rgb(0, 0, 0);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
 }
@@ -1054,13 +1054,13 @@ ol li .descr {
 }
 .sobre-nos .sobre-nos_cards .image-block-0 .titulo-block-0 {
   position: absolute;
-  top: 20px;
+  top: 480px;
   left: 20px;
   margin: 0;
   padding: 0;
   color: white;
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1;
   opacity: 1;
   transform: scale(1);
@@ -1102,7 +1102,7 @@ ol li .descr {
   min-width: 360px;
   height: 667px;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 5px 5px 24px -10px rgb(0, 0, 0);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
 }
