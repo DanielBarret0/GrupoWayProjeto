@@ -938,6 +938,11 @@ body.rolado-safe .voltar-ao-topo-safe {
     font-size: 24px;
   }
 }
+@media (min-width: 1440px) {
+  .futuro {
+    padding: 2rem 25rem;
+  }
+}
 .nossa-equipe {
   display: flex;
   flex-direction: column;

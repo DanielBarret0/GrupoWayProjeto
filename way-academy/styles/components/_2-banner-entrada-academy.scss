@@ -39,7 +39,7 @@
         justify-content: center;
         gap: 1rem;
 
-        h1 {
+        h2 {
             font-size: $titulo;
 
             .highligth-academy {
@@ -73,7 +73,7 @@
         .textos {
             padding: 0 6rem;
 
-            h1 {
+            h2 {
                 font-size: $titulo-tablet;
 
                 .highligth-academy {
@@ -112,7 +112,7 @@
         .textos {
             margin: 0;
             padding: 0;
-            h1 {
+            h2 {
                 font-size: $titulo-tablet;
             }
             p {
@@ -126,7 +126,30 @@
 }
 
 @media (min-width: 1366px) {
+    .banner-entrada-academy {
+        justify-content: center;
+        flex-direction: row;
 
+        .iframe-academy {
+            margin-top: 0;
+            width: 70%;
+            height: 50%;
+        }
+
+        .textos {
+            margin: 0;
+            padding: 0;
+            h2 {
+                font-size: $titulo-desktop;
+            }
+            p {
+                font-size: $texto-desktop;
+            }
+            .texto-paragrafo {
+                font-size: $texto-desktop;
+            }
+        }
+    }
 }
 
 
@@ -134,30 +157,10 @@
     .banner-entrada-academy {
         justify-content: center;
         gap: 1rem;
-        .textos {
-            padding: 0;
-            margin: 0;
-
-            h1 {
-                font-size: $titulo-desktop;
-
-                .highligth-academy {
-                    font-size: $titulo-desktop;
-                }
-            }
-
-            p {
-                font-size: $texto-desktop;
-            }
-
-            .texto-paragrafo {
-                font-size: $texto-desktop;
-            }
-        }
-
+        
         .iframe-academy {
             margin-top: 0;
-            width: 175%;
+            width: 70%;
             height: 60%;
         }
     }
@@ -170,7 +173,7 @@
             padding: 0;
             margin: 0;
 
-            h1 {
+            h2 {
                 font-size: $titulo-desktop;
 
                 .highligth-academy {
@@ -189,8 +192,8 @@
 
         .iframe-academy {
             margin-top: 0;
-            width: 145%;
-            height: 40%;
+            width: 45%;
+            height: 45%;
         }
     }
 }
