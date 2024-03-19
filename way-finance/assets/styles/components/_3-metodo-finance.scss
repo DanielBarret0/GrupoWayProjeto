@@ -55,20 +55,20 @@
         text-align: center;
 
         .card-1 {
-            background-image: url(../img/background-1.png);
+            background-image: url(../img/background-1.jpg);
         }
 
         .card-2 {
-            background-image: url(../img/background-2.png);
+            background-image: url(../img/background-2.jpg);
         }
 
         .card-3 {
-            background-image: url(../img/background-3.png);
+            background-image: url(../img/background-3.jpg);
 
         }
 
         .card-4 {
-            background-image: url(../img/background-4.png);
+            background-image: url(../img/background-4.jpg);
         }
 
         .content {
@@ -175,7 +175,7 @@
 
         .cards__container {
             .card {
-                width: 330px;
+                width: 350px;
             }
         }
 
@@ -185,7 +185,7 @@
 @media screen and (min-width: 1366px) {
     .metodos {
         .textos {
-            padding: 0 10rem;
+            padding: 0 13rem;
         }
 
         .cards__container {

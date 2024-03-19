@@ -573,16 +573,16 @@ body.rolado-finance .voltar-ao-topo-finance {
   text-align: center;
 }
 .metodos .card .card-1 {
-  background-image: url(../img/background-1.png);
+  background-image: url(../img/background-1.jpg);
 }
 .metodos .card .card-2 {
-  background-image: url(../img/background-2.png);
+  background-image: url(../img/background-2.jpg);
 }
 .metodos .card .card-3 {
-  background-image: url(../img/background-3.png);
+  background-image: url(../img/background-3.jpg);
 }
 .metodos .card .card-4 {
-  background-image: url(../img/background-4.png);
+  background-image: url(../img/background-4.jpg);
 }
 .metodos .card .content {
   display: flex;
@@ -666,12 +666,12 @@ body.rolado-finance .voltar-ao-topo-finance {
     font-size: 20px;
   }
   .metodos .cards__container .card {
-    width: 330px;
+    width: 350px;
   }
 }
 @media screen and (min-width: 1366px) {
   .metodos .textos {
-    padding: 0 10rem;
+    padding: 0 13rem;
   }
   .metodos .cards__container .card {
     height: 300px;
