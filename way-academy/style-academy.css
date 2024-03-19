@@ -983,6 +983,7 @@ body.rolado-academy .voltar-ao-topo-academy {
 @media (min-width: 768px) {
   .futuro-academy {
     padding: 1rem 9rem;
+    background-position: center;
   }
 }
 @media (min-width: 1366px) {
@@ -1004,6 +1005,7 @@ body.rolado-academy .voltar-ao-topo-academy {
   .futuro-academy p {
     font-size: 24px;
     font-weight: 500;
+    padding: 0;
   }
   .futuro-academy .futuro__texto-destaque-academy {
     font-size: 24px;

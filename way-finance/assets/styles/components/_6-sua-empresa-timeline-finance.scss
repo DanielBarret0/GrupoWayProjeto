@@ -164,6 +164,10 @@ ol li .descr {
 }
 
 @media (min-width: 2000px) {
+    .box-info {
+        padding: 5rem 0;
+    }
+
     ol {
         width: auto;
     }
